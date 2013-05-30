@@ -138,4 +138,24 @@
 -(NSString *)dropboxAppSecret;
 -(NSString *)dropboxRootFolder;
 -(BOOL)dropboxShouldOverwriteExistedFile;
+
+
+- (NSString*)sinaWeiboConsumerKey;
+- (NSString*)sinaWeiboConsumerSecret;
+- (NSString*)sinaWeiboCallbackUrl;
+- (NSNumber*)sinaWeiboUseXAuth;
+- (NSString*)sinaWeiboScreenname;
+- (NSString*)sinaWeiboUserID;
+
+
+- (NSString*)netEaseWeiboConsumerKey;
+- (NSString*)netEaseWeiboConsumerSecret;
+- (NSString*)netEaseWeiboCallbackUrl;
+- (NSNumber*)netEaseWeiboUseXAuth;
+- (NSString*)netEaseaWeiboScreenname;
+- (NSString*)netEaseWeiboUserID;
+
+- (NSString*)tencentWeixinAppId;
+- (NSString*)tencentWeixinAppKey;
+
 @end

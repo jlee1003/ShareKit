@@ -234,9 +234,10 @@
 "Tumblr" = "Tumblr";
 "Twitter" = "Twitter";
 "Vkontakte" = "Vkontakte";
-"Instagram" = "Instagram";
+"Instagram" = "Send to other apps";
 "YouTube" = "YouTube";
 "Dropbox" = "Dropbox";
+"Sina Weibo"="Sina Weibo";
 /*  SHKDropbox  */
 /*
  *  user can rename file with new name while file is uploading to Dropbox

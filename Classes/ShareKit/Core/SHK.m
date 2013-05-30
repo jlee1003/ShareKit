@@ -45,7 +45,6 @@ NSString * const SHKSendDidCancelNotification = @"SHKSendDidCancel";
 NSString * const SHKAuthDidFinishNotification = @"SHKAuthDidFinish";
 
 NSString * SHKLocalizedStringFormat(NSString* key);
-
 @interface SHK ()
 
 @property (nonatomic, assign) UIViewController *rootViewController;
@@ -333,7 +332,7 @@ BOOL SHKinit;
 		// Save defaults to prefs
 		[self setFavorites:favoriteSharers forItem:item];
 	}
-    
+    NSLog(@"favoriteSharers=%d",[favoriteSharers count]);
     // Remove all sharers which are not part of the SHKSharers.plist
     NSDictionary *sharersDict = [self sharersDictionary];
     NSArray *keys = [sharersDict allKeys];
@@ -342,6 +341,8 @@ BOOL SHKinit;
         NSArray *sharers = [sharersDict objectForKey:key];
         [allAvailableSharers addObjectsFromArray:sharers];
     }
+    
+    NSLog(@"availableshares=%d",[allAvailableSharers count]);
     NSMutableSet *favoriteSharersSet = [NSMutableSet setWithArray:favoriteSharers];
     [favoriteSharersSet minusSet:allAvailableSharers];
     if ([favoriteSharersSet count] > 0)
@@ -358,6 +359,8 @@ BOOL SHKinit;
 		
 		[newFavs release];
     }
+    
+    NSLog(@"favoriteSharers2=%d",[favoriteSharers count]);
 	
 	// Make sure the favorites are not using any exclusions, remove them if they are.
 	NSArray *exclusions = [[NSUserDefaults standardUserDefaults] objectForKey:@"SHKExcluded"];
@@ -375,6 +378,8 @@ BOOL SHKinit;
 		
 		[newFavs release];
 	}
+    
+    NSLog(@"favoriteSharers3=%d",[favoriteSharers count]);
 	
 	return favoriteSharers;
 }
@@ -393,6 +398,7 @@ BOOL SHKinit;
 	}
     
 	NSMutableArray *favs = [[self favoriteSharersForItem:item] mutableCopy];
+    NSLog(@"favs=%d",[favs count]);
 	
 	[favs removeObject:className];
 	[favs insertObject:className atIndex:0];

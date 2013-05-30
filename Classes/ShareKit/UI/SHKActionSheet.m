@@ -56,6 +56,7 @@
 	
 	as.sharers = [NSMutableArray arrayWithCapacity:0];
 	NSArray *favoriteSharers = [SHK favoriteSharersForItem:item];
+    
 		
 	// Add buttons for each favorite sharer
 	id class;
@@ -63,13 +64,18 @@
 	{
 		//Do not add buttons for sharers, which are not able to share item
         class = NSClassFromString(sharerId);
+        
 		if ([class canShare] && [class canShareItem:item])
 		{
 			[as addButtonWithTitle: [class sharerTitle] ];
 			[as.sharers addObject:sharerId];
-		}
+		}else{
+            NSLog(@"%@ cannot share", sharerId);
+        }
+        NSLog(@"share id=%@  class canshare=%d  class canshareItem=%d",sharerId,[class canShare],[class canShareItem:item]);
+        
 	}
-	
+	NSLog(@"shares count=%d",[as.sharers count]);
 	if([SHKCONFIG(showActionSheetMoreButton) boolValue])
 	{
 		// Add More button

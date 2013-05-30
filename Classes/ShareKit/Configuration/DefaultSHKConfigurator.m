@@ -548,6 +548,89 @@
     return nil;
 }
 
+
+
+// Sina Weibo - http://open.weibo.com/
+- (NSString*)sinaWeiboConsumerKey {
+	return @"";
+}
+
+- (NSString*)sinaWeiboConsumerSecret {
+	return @"";
+}
+
+// You need to set this if using OAuth (MUST be set, it could be any words)
+- (NSString*)sinaWeiboCallbackUrl {
+	return @"";
+}
+
+// To use xAuth, set to 1
+- (NSNumber*)sinaWeiboUseXAuth {
+	return [NSNumber numberWithInt:0];
+}
+
+// Enter your sina weibo screen name (Only for xAuth)
+- (NSString*)sinaWeiboScreenname {
+	return @"";
+}
+
+//Enter your app's sina weibo account if you'd like to ask the user to follow it when logging in. (Only for xAuth)
+- (NSString*)sinaWeiboUserID {
+	return @"";
+}
+
+// NetEase Weibo - http://open.t.163.com/
+- (NSString*)netEaseWeiboConsumerKey
+{
+    return @"";
+}
+
+- (NSString*)netEaseWeiboConsumerSecret
+{
+    return @"";
+}
+
+// You need to set this if using OAuth (MUST be set "null")
+- (NSString*)netEaseWeiboCallbackUrl
+{
+    return @"null";
+}
+
+// To use xAuth, set to 1
+- (NSNumber*)netEaseWeiboUseXAuth
+{
+    return [NSNumber numberWithInt:0];
+}
+
+// Enter your netease weibo screen name (Only for xAuth)
+- (NSString*)netEaseaWeiboScreenname
+{
+    return @"";
+}
+
+//Enter your app's netease weibo account if you'd like to ask the user to follow it when logging in. (Only for xAuth)
+- (NSString*)netEaseWeiboUserID
+{
+    return @"";
+}
+
+
+
+
+
+// Tencent Weixin - http://open.weixin.qq.com
+- (NSString*)tencentWeixinAppId
+{
+    return @"";
+}
+
+- (NSString*)tencentWeixinAppKey
+{
+    return @"";
+}
+
+
+
 /* SHKTextMessage */
 
 //You can use this to prefill recipients. User enters them in MFMessageComposeViewController by default. Should be array of NSStrings.

@@ -38,6 +38,10 @@
 		<string>SHKPlurk</string>
 		<string>SHKDropbox</string>
 		<string>SHKYouTube</string>
+		<string>SHKRenRen</string>
+		<string>SHKNetEaseWeibo</string>
+		<string>SHKTencentWeibo</string>
+		<string>SHKTencentWeixin</string>
 	</array>
 </dict>
 </plist>

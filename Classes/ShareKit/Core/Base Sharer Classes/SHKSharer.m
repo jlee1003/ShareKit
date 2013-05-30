@@ -873,7 +873,7 @@ static NSString *const kSHKStoredShareInfoKey=@"kSHKStoredShareInfo";
     [[NSNotificationCenter defaultCenter] postNotificationName:SHKSendDidStartNotification object:self];
     
 	if ([self.shareDelegate respondsToSelector:@selector(sharerStartedSending:)])
-		[self.shareDelegate performSelector:@selector(sharerStartedSending:) withObject:self];	
+		[self.shareDelegate performSelector:@selector(sharerStartedSending:) withObject:self];
 }
 
 - (void)sendDidFinish

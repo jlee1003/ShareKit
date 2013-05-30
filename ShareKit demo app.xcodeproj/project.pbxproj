@@ -333,13 +333,6 @@
 			remoteGlobalIDString = 949BCB8C172A993000D706D4;
 			remoteInfo = Buffer;
 		};
-		7AA2E8881743805E00B17434 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AABBED7D162F0C33009D46E4;
-			remoteInfo = "Read It Later";
-		};
 		7AA2E88A1743805E00B17434 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
@@ -438,6 +431,20 @@
 			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
 			remoteInfo = "Resource Bundle";
 		};
+		F6B27890174498B800BF2224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4E465A173E2B2900CCEE80;
+			remoteInfo = Pocket;
+		};
+		F6B27892174498B800BF2224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4E4663173E2C2500CCEE80;
+			remoteInfo = "Pocket SDK";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -493,7 +500,7 @@
 		7A04083717413908003404B9 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		7A04083817413908003404B9 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		7A04083B1741399E003404B9 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		7AA2E8ED1743814A00B17434 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; lastKnownFileType = file; name = GTMOAuth2ViewTouch.xib; path = "Submodules/google-api-objectivec/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+		7AA2E8ED1743814A00B17434 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "Submodules/google-api-objectivec/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		7AA2E9451743837600B17434 /* BufferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BufferSDK.framework; sourceTree = "<group>"; };
 		7AA2E9471743837600B17434 /* alert-window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window.png"; sourceTree = "<group>"; };
 		7AA2E9481743837600B17434 /* alert-window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window@2x.png"; sourceTree = "<group>"; };
@@ -732,7 +739,6 @@
 				7AA2E8831743805E00B17434 /* libLinkedIn.a */,
 				7AA2E8851743805E00B17434 /* libPinboard.a */,
 				7AA2E8871743805E00B17434 /* libBuffer.a */,
-				7AA2E8891743805E00B17434 /* libRead It Later.a */,
 				7AA2E88B1743805E00B17434 /* libSina Weibo.a */,
 				7AA2E88D1743805E00B17434 /* libTumblr.a */,
 				7AA2E88F1743805E00B17434 /* libTwitter.a */,
@@ -745,6 +751,8 @@
 				7AA2E89D1743805E00B17434 /* libDropbox SDK.a */,
 				7AA2E89F1743805E00B17434 /* libYouTube.a */,
 				7AA2E8A11743805E00B17434 /* libYouTube SDK.a */,
+				F6B27891174498B800BF2224 /* libPocket.a */,
+				F6B27893174498B800BF2224 /* libPocket SDK.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1118,13 +1126,6 @@
 			remoteRef = 7AA2E8861743805E00B17434 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7AA2E8891743805E00B17434 /* libRead It Later.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRead It Later.a";
-			remoteRef = 7AA2E8881743805E00B17434 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		7AA2E88B1743805E00B17434 /* libSina Weibo.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1207,6 +1208,20 @@
 			fileType = archive.ar;
 			path = "libYouTube SDK.a";
 			remoteRef = 7AA2E8A01743805E00B17434 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6B27891174498B800BF2224 /* libPocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPocket.a;
+			remoteRef = F6B27890174498B800BF2224 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6B27893174498B800BF2224 /* libPocket SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPocket SDK.a";
+			remoteRef = F6B27892174498B800BF2224 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
