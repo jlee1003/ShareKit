@@ -4642,7 +4642,6 @@
 				F61B5CB41756F55D0020F690 /* small-button-normal@2x.png in Resources */,
 				7A2882491553CC61007DC379 /* ShareKit.bundle in Resources */,
 				7A2882571553D7E1007DC379 /* SHKSharers.plist in Resources */,
-<<<<<<< HEAD
 				F61B5C1B1756DC190020F690 /* Localizable.strings in Resources */,
 				F61B5C1C1756DC190020F690 /* bg.png in Resources */,
 				F61B5C1D1756DC190020F690 /* bg@2x.png in Resources */,
@@ -4658,9 +4657,7 @@
 				F61B5C271756DC190020F690 /* delete@2x.png in Resources */,
 				F61B5C281756DC190020F690 /* logo.png in Resources */,
 				F61B5C291756DC190020F690 /* logo@2x.png in Resources */,
-=======
 				94CC29071745399800C31CD8 /* BufferSDKResources.bundle in Resources */,
->>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
