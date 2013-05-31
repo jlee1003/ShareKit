@@ -48,78 +48,6 @@
 		7AA2E9381743814A00B17434 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E8ED1743814A00B17434 /* GTMOAuth2ViewTouch.xib */; };
 		7AA2E93D1743825100B17434 /* libShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA2E84D1743805E00B17434 /* libShareKit.a */; };
 		7AA2E93E1743828300B17434 /* ShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E84F1743805E00B17434 /* ShareKit.bundle */; };
-		7AA2E98E1743837600B17434 /* BufferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA2E9451743837600B17434 /* BufferSDK.framework */; };
-		7AA2E98F1743837600B17434 /* alert-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9471743837600B17434 /* alert-window.png */; };
-		7AA2E9901743837600B17434 /* alert-window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9481743837600B17434 /* alert-window@2x.png */; };
-		7AA2E9911743837600B17434 /* AuthBufferLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9491743837600B17434 /* AuthBufferLogo.png */; };
-		7AA2E9921743837600B17434 /* AuthBufferLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94A1743837600B17434 /* AuthBufferLogo@2x.png */; };
-		7AA2E9931743837600B17434 /* Buffer-BufferLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94B1743837600B17434 /* Buffer-BufferLogin.png */; };
-		7AA2E9941743837600B17434 /* Buffer-BufferLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94C1743837600B17434 /* Buffer-BufferLogin@2x.png */; };
-		7AA2E9951743837600B17434 /* Buffer-ButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94D1743837600B17434 /* Buffer-ButtonArrow.png */; };
-		7AA2E9961743837600B17434 /* Buffer-ButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94E1743837600B17434 /* Buffer-ButtonArrow@2x.png */; };
-		7AA2E9971743837600B17434 /* Buffer-FacebookLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E94F1743837600B17434 /* Buffer-FacebookLogin.png */; };
-		7AA2E9981743837600B17434 /* Buffer-FacebookLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9501743837600B17434 /* Buffer-FacebookLogin@2x.png */; };
-		7AA2E9991743837600B17434 /* Buffer-TwitterLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9511743837600B17434 /* Buffer-TwitterLogin.png */; };
-		7AA2E99A1743837600B17434 /* Buffer-TwitterLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9521743837600B17434 /* Buffer-TwitterLogin@2x.png */; };
-		7AA2E99B1743837600B17434 /* BufferAvatarMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9531743837600B17434 /* BufferAvatarMask.png */; };
-		7AA2E99C1743837600B17434 /* BufferAvatarMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9541743837600B17434 /* BufferAvatarMask@2x.png */; };
-		7AA2E99D1743837600B17434 /* BufferButtonTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9551743837600B17434 /* BufferButtonTitle.png */; };
-		7AA2E99E1743837600B17434 /* BufferButtonTitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9561743837600B17434 /* BufferButtonTitle@2x.png */; };
-		7AA2E99F1743837600B17434 /* BufferCloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9571743837600B17434 /* BufferCloseButton.png */; };
-		7AA2E9A01743837600B17434 /* BufferCloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9581743837600B17434 /* BufferCloseButton@2x.png */; };
-		7AA2E9A11743837600B17434 /* BufferGreenButton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9591743837600B17434 /* BufferGreenButton-highlighted.png */; };
-		7AA2E9A21743837600B17434 /* BufferGreenButton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95A1743837600B17434 /* BufferGreenButton-highlighted@2x.png */; };
-		7AA2E9A31743837600B17434 /* BufferGreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95B1743837600B17434 /* BufferGreenButton.png */; };
-		7AA2E9A41743837600B17434 /* BufferGreenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95C1743837600B17434 /* BufferGreenButton@2x.png */; };
-		7AA2E9A51743837600B17434 /* BufferGreyButton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95D1743837600B17434 /* BufferGreyButton-highlighted.png */; };
-		7AA2E9A61743837600B17434 /* BufferGreyButton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95E1743837600B17434 /* BufferGreyButton-highlighted@2x.png */; };
-		7AA2E9A71743837600B17434 /* BufferGreyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E95F1743837600B17434 /* BufferGreyButton.png */; };
-		7AA2E9A81743837600B17434 /* BufferGreyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9601743837600B17434 /* BufferGreyButton@2x.png */; };
-		7AA2E9A91743837600B17434 /* BufferIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9611743837600B17434 /* BufferIcon.png */; };
-		7AA2E9AA1743837600B17434 /* BufferIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9621743837600B17434 /* BufferIcon@2x.png */; };
-		7AA2E9AB1743837600B17434 /* BufferLargeGreenButton-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9631743837600B17434 /* BufferLargeGreenButton-active.png */; };
-		7AA2E9AC1743837600B17434 /* BufferLargeGreenButton-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9641743837600B17434 /* BufferLargeGreenButton-active@2x.png */; };
-		7AA2E9AD1743837600B17434 /* BufferLargeGreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9651743837600B17434 /* BufferLargeGreenButton.png */; };
-		7AA2E9AE1743837600B17434 /* BufferLargeGreenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9661743837600B17434 /* BufferLargeGreenButton@2x.png */; };
-		7AA2E9AF1743837600B17434 /* BufferLargeGreyButton-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9671743837600B17434 /* BufferLargeGreyButton-active.png */; };
-		7AA2E9B01743837600B17434 /* BufferLargeGreyButton-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9681743837600B17434 /* BufferLargeGreyButton-active@2x.png */; };
-		7AA2E9B11743837600B17434 /* BufferLargeGreyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9691743837600B17434 /* BufferLargeGreyButton.png */; };
-		7AA2E9B21743837600B17434 /* BufferLargeGreyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96A1743837600B17434 /* BufferLargeGreyButton@2x.png */; };
-		7AA2E9B31743837600B17434 /* BufferPaperclip-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96B1743837600B17434 /* BufferPaperclip-flipped.png */; };
-		7AA2E9B41743837600B17434 /* BufferPaperclip-flipped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96C1743837600B17434 /* BufferPaperclip-flipped@2x.png */; };
-		7AA2E9B51743837600B17434 /* BufferPaperclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96D1743837600B17434 /* BufferPaperclip.png */; };
-		7AA2E9B61743837600B17434 /* BufferPaperclip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96E1743837600B17434 /* BufferPaperclip@2x.png */; };
-		7AA2E9B71743837600B17434 /* BufferPendingCountBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E96F1743837600B17434 /* BufferPendingCountBG.png */; };
-		7AA2E9B81743837600B17434 /* BufferPendingCountBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9701743837600B17434 /* BufferPendingCountBG@2x.png */; };
-		7AA2E9B91743837600B17434 /* BufferPostButtonTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9711743837600B17434 /* BufferPostButtonTitle.png */; };
-		7AA2E9BA1743837600B17434 /* BufferPostButtonTitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9721743837600B17434 /* BufferPostButtonTitle@2x.png */; };
-		7AA2E9BB1743837600B17434 /* BufferprofileCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9731743837600B17434 /* BufferprofileCheckmark.png */; };
-		7AA2E9BC1743837600B17434 /* BufferprofileCheckmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9741743837600B17434 /* BufferprofileCheckmark@2x.png */; };
-		7AA2E9BD1743837600B17434 /* BufferProfileCountBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9751743837600B17434 /* BufferProfileCountBG.png */; };
-		7AA2E9BE1743837600B17434 /* BufferProfileCountBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9761743837600B17434 /* BufferProfileCountBG@2x.png */; };
-		7AA2E9BF1743837600B17434 /* BufferSheetBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9771743837600B17434 /* BufferSheetBackground.png */; };
-		7AA2E9C01743837600B17434 /* BufferSheetBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9781743837600B17434 /* BufferSheetBackground@2x.png */; };
-		7AA2E9C11743837600B17434 /* BufferSheetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9791743837600B17434 /* BufferSheetButton.png */; };
-		7AA2E9C21743837600B17434 /* BufferSheetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97A1743837600B17434 /* BufferSheetButton@2x.png */; };
-		7AA2E9C31743837600B17434 /* BufferSheetButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97B1743837600B17434 /* BufferSheetButtonSelected.png */; };
-		7AA2E9C41743837600B17434 /* BufferSheetButtonSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97C1743837600B17434 /* BufferSheetButtonSelected@2x.png */; };
-		7AA2E9C51743837600B17434 /* BufferSheetGreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97D1743837600B17434 /* BufferSheetGreenButton.png */; };
-		7AA2E9C61743837600B17434 /* BufferSheetGreenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97E1743837600B17434 /* BufferSheetGreenButton@2x.png */; };
-		7AA2E9C71743837600B17434 /* BufferSheetGreenButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E97F1743837600B17434 /* BufferSheetGreenButtonSelected.png */; };
-		7AA2E9C81743837600B17434 /* BufferSheetGreenButtonSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9801743837600B17434 /* BufferSheetGreenButtonSelected@2x.png */; };
-		7AA2E9C91743837600B17434 /* BufferSheetLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9811743837600B17434 /* BufferSheetLogo.png */; };
-		7AA2E9CA1743837600B17434 /* BufferSheetLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9821743837600B17434 /* BufferSheetLogo@2x.png */; };
-		7AA2E9CB1743837600B17434 /* BufferSheetNavigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9831743837600B17434 /* BufferSheetNavigationBar.png */; };
-		7AA2E9CC1743837600B17434 /* BufferSheetNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9841743837600B17434 /* BufferSheetNavigationBar@2x.png */; };
-		7AA2E9CD1743837600B17434 /* BufferSheetProfileSelectionGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9851743837600B17434 /* BufferSheetProfileSelectionGradient.png */; };
-		7AA2E9CE1743837600B17434 /* BufferSheetProfileSelectionGradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9861743837600B17434 /* BufferSheetProfileSelectionGradient@2x.png */; };
-		7AA2E9CF1743837600B17434 /* BufferSheetShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9871743837600B17434 /* BufferSheetShadow.png */; };
-		7AA2E9D01743837600B17434 /* BufferSheetShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9881743837600B17434 /* BufferSheetShadow@2x.png */; };
-		7AA2E9D11743837600B17434 /* BufferSheetViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E9891743837600B17434 /* BufferSheetViewController.nib */; };
-		7AA2E9D21743837600B17434 /* Buffertoolbar-profiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E98A1743837600B17434 /* Buffertoolbar-profiles.png */; };
-		7AA2E9D31743837600B17434 /* Buffertoolbar-profiles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E98B1743837600B17434 /* Buffertoolbar-profiles@2x.png */; };
-		7AA2E9D41743837600B17434 /* LoginBufferLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E98C1743837600B17434 /* LoginBufferLogo.png */; };
-		7AA2E9D51743837600B17434 /* LoginBufferLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E98D1743837600B17434 /* LoginBufferLogo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -431,14 +359,22 @@
 			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
 			remoteInfo = "Resource Bundle";
 		};
+<<<<<<< HEAD
 		F6B27890174498B800BF2224 /* PBXContainerItemProxy */ = {
+=======
+		94CC293517453A3100C31CD8 /* PBXContainerItemProxy */ = {
+>>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 			isa = PBXContainerItemProxy;
 			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7A4E465A173E2B2900CCEE80;
 			remoteInfo = Pocket;
 		};
+<<<<<<< HEAD
 		F6B27892174498B800BF2224 /* PBXContainerItemProxy */ = {
+=======
+		94CC293717453A3100C31CD8 /* PBXContainerItemProxy */ = {
+>>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 			isa = PBXContainerItemProxy;
 			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
 			proxyType = 2;
@@ -501,6 +437,7 @@
 		7A04083817413908003404B9 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		7A04083B1741399E003404B9 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		7AA2E8ED1743814A00B17434 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "Submodules/google-api-objectivec/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		7AA2E9451743837600B17434 /* BufferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BufferSDK.framework; sourceTree = "<group>"; };
 		7AA2E9471743837600B17434 /* alert-window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window.png"; sourceTree = "<group>"; };
 		7AA2E9481743837600B17434 /* alert-window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-window@2x.png"; sourceTree = "<group>"; };
@@ -573,6 +510,8 @@
 		7AA2E98B1743837600B17434 /* Buffertoolbar-profiles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Buffertoolbar-profiles@2x.png"; sourceTree = "<group>"; };
 		7AA2E98C1743837600B17434 /* LoginBufferLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBufferLogo.png; sourceTree = "<group>"; };
 		7AA2E98D1743837600B17434 /* LoginBufferLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBufferLogo@2x.png"; sourceTree = "<group>"; };
+=======
+>>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -599,7 +538,6 @@
 				7A0406671740E3F6003404B9 /* UIKit.framework in Frameworks */,
 				7A0406691740E3F6003404B9 /* Foundation.framework in Frameworks */,
 				7A04066B1740E3F6003404B9 /* CoreGraphics.framework in Frameworks */,
-				7AA2E98E1743837600B17434 /* BufferSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +566,6 @@
 		7A0406651740E3F6003404B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AA2E9441743837600B17434 /* BufferSDK.embeddedframework */,
 				7A040831174133C5003404B9 /* Social.framework */,
 				7A04076917410472003404B9 /* QuartzCore.framework */,
 				7A04076717410466003404B9 /* StoreKit.framework */,
@@ -751,8 +688,13 @@
 				7AA2E89D1743805E00B17434 /* libDropbox SDK.a */,
 				7AA2E89F1743805E00B17434 /* libYouTube.a */,
 				7AA2E8A11743805E00B17434 /* libYouTube SDK.a */,
+<<<<<<< HEAD
 				F6B27891174498B800BF2224 /* libPocket.a */,
 				F6B27893174498B800BF2224 /* libPocket SDK.a */,
+=======
+				94CC293617453A3100C31CD8 /* libPocket.a */,
+				94CC293817453A3100C31CD8 /* libPocket SDK.a */,
+>>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -771,94 +713,6 @@
 				7AA2E8EE1743814A00B17434 /* Google OAuth */,
 			);
 			name = "Resources - ShareKit Library";
-			sourceTree = "<group>";
-		};
-		7AA2E9441743837600B17434 /* BufferSDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				7AA2E9451743837600B17434 /* BufferSDK.framework */,
-				7AA2E9461743837600B17434 /* Resources */,
-			);
-			name = BufferSDK.embeddedframework;
-			path = "Submodules/buffer-ios-sdk/BufferSDK/BufferSDK.embeddedframework";
-			sourceTree = "<group>";
-		};
-		7AA2E9461743837600B17434 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7AA2E9471743837600B17434 /* alert-window.png */,
-				7AA2E9481743837600B17434 /* alert-window@2x.png */,
-				7AA2E9491743837600B17434 /* AuthBufferLogo.png */,
-				7AA2E94A1743837600B17434 /* AuthBufferLogo@2x.png */,
-				7AA2E94B1743837600B17434 /* Buffer-BufferLogin.png */,
-				7AA2E94C1743837600B17434 /* Buffer-BufferLogin@2x.png */,
-				7AA2E94D1743837600B17434 /* Buffer-ButtonArrow.png */,
-				7AA2E94E1743837600B17434 /* Buffer-ButtonArrow@2x.png */,
-				7AA2E94F1743837600B17434 /* Buffer-FacebookLogin.png */,
-				7AA2E9501743837600B17434 /* Buffer-FacebookLogin@2x.png */,
-				7AA2E9511743837600B17434 /* Buffer-TwitterLogin.png */,
-				7AA2E9521743837600B17434 /* Buffer-TwitterLogin@2x.png */,
-				7AA2E9531743837600B17434 /* BufferAvatarMask.png */,
-				7AA2E9541743837600B17434 /* BufferAvatarMask@2x.png */,
-				7AA2E9551743837600B17434 /* BufferButtonTitle.png */,
-				7AA2E9561743837600B17434 /* BufferButtonTitle@2x.png */,
-				7AA2E9571743837600B17434 /* BufferCloseButton.png */,
-				7AA2E9581743837600B17434 /* BufferCloseButton@2x.png */,
-				7AA2E9591743837600B17434 /* BufferGreenButton-highlighted.png */,
-				7AA2E95A1743837600B17434 /* BufferGreenButton-highlighted@2x.png */,
-				7AA2E95B1743837600B17434 /* BufferGreenButton.png */,
-				7AA2E95C1743837600B17434 /* BufferGreenButton@2x.png */,
-				7AA2E95D1743837600B17434 /* BufferGreyButton-highlighted.png */,
-				7AA2E95E1743837600B17434 /* BufferGreyButton-highlighted@2x.png */,
-				7AA2E95F1743837600B17434 /* BufferGreyButton.png */,
-				7AA2E9601743837600B17434 /* BufferGreyButton@2x.png */,
-				7AA2E9611743837600B17434 /* BufferIcon.png */,
-				7AA2E9621743837600B17434 /* BufferIcon@2x.png */,
-				7AA2E9631743837600B17434 /* BufferLargeGreenButton-active.png */,
-				7AA2E9641743837600B17434 /* BufferLargeGreenButton-active@2x.png */,
-				7AA2E9651743837600B17434 /* BufferLargeGreenButton.png */,
-				7AA2E9661743837600B17434 /* BufferLargeGreenButton@2x.png */,
-				7AA2E9671743837600B17434 /* BufferLargeGreyButton-active.png */,
-				7AA2E9681743837600B17434 /* BufferLargeGreyButton-active@2x.png */,
-				7AA2E9691743837600B17434 /* BufferLargeGreyButton.png */,
-				7AA2E96A1743837600B17434 /* BufferLargeGreyButton@2x.png */,
-				7AA2E96B1743837600B17434 /* BufferPaperclip-flipped.png */,
-				7AA2E96C1743837600B17434 /* BufferPaperclip-flipped@2x.png */,
-				7AA2E96D1743837600B17434 /* BufferPaperclip.png */,
-				7AA2E96E1743837600B17434 /* BufferPaperclip@2x.png */,
-				7AA2E96F1743837600B17434 /* BufferPendingCountBG.png */,
-				7AA2E9701743837600B17434 /* BufferPendingCountBG@2x.png */,
-				7AA2E9711743837600B17434 /* BufferPostButtonTitle.png */,
-				7AA2E9721743837600B17434 /* BufferPostButtonTitle@2x.png */,
-				7AA2E9731743837600B17434 /* BufferprofileCheckmark.png */,
-				7AA2E9741743837600B17434 /* BufferprofileCheckmark@2x.png */,
-				7AA2E9751743837600B17434 /* BufferProfileCountBG.png */,
-				7AA2E9761743837600B17434 /* BufferProfileCountBG@2x.png */,
-				7AA2E9771743837600B17434 /* BufferSheetBackground.png */,
-				7AA2E9781743837600B17434 /* BufferSheetBackground@2x.png */,
-				7AA2E9791743837600B17434 /* BufferSheetButton.png */,
-				7AA2E97A1743837600B17434 /* BufferSheetButton@2x.png */,
-				7AA2E97B1743837600B17434 /* BufferSheetButtonSelected.png */,
-				7AA2E97C1743837600B17434 /* BufferSheetButtonSelected@2x.png */,
-				7AA2E97D1743837600B17434 /* BufferSheetGreenButton.png */,
-				7AA2E97E1743837600B17434 /* BufferSheetGreenButton@2x.png */,
-				7AA2E97F1743837600B17434 /* BufferSheetGreenButtonSelected.png */,
-				7AA2E9801743837600B17434 /* BufferSheetGreenButtonSelected@2x.png */,
-				7AA2E9811743837600B17434 /* BufferSheetLogo.png */,
-				7AA2E9821743837600B17434 /* BufferSheetLogo@2x.png */,
-				7AA2E9831743837600B17434 /* BufferSheetNavigationBar.png */,
-				7AA2E9841743837600B17434 /* BufferSheetNavigationBar@2x.png */,
-				7AA2E9851743837600B17434 /* BufferSheetProfileSelectionGradient.png */,
-				7AA2E9861743837600B17434 /* BufferSheetProfileSelectionGradient@2x.png */,
-				7AA2E9871743837600B17434 /* BufferSheetShadow.png */,
-				7AA2E9881743837600B17434 /* BufferSheetShadow@2x.png */,
-				7AA2E9891743837600B17434 /* BufferSheetViewController.nib */,
-				7AA2E98A1743837600B17434 /* Buffertoolbar-profiles.png */,
-				7AA2E98B1743837600B17434 /* Buffertoolbar-profiles@2x.png */,
-				7AA2E98C1743837600B17434 /* LoginBufferLogo.png */,
-				7AA2E98D1743837600B17434 /* LoginBufferLogo@2x.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1210,6 +1064,7 @@
 			remoteRef = 7AA2E8A01743805E00B17434 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+<<<<<<< HEAD
 		F6B27891174498B800BF2224 /* libPocket.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1222,6 +1077,20 @@
 			fileType = archive.ar;
 			path = "libPocket SDK.a";
 			remoteRef = F6B27892174498B800BF2224 /* PBXContainerItemProxy */;
+=======
+		94CC293617453A3100C31CD8 /* libPocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPocket.a;
+			remoteRef = 94CC293517453A3100C31CD8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		94CC293817453A3100C31CD8 /* libPocket SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPocket SDK.a";
+			remoteRef = 94CC293717453A3100C31CD8 /* PBXContainerItemProxy */;
+>>>>>>> 5238e37b1e8f54ac32c91b86bf13d844a4b795c2
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1244,77 +1113,6 @@
 				7A04083A17413908003404B9 /* RootViewController.xib in Resources */,
 				7A04083C1741399E003404B9 /* MainWindow-iPad.xib in Resources */,
 				7AA2E9381743814A00B17434 /* GTMOAuth2ViewTouch.xib in Resources */,
-				7AA2E98F1743837600B17434 /* alert-window.png in Resources */,
-				7AA2E9901743837600B17434 /* alert-window@2x.png in Resources */,
-				7AA2E9911743837600B17434 /* AuthBufferLogo.png in Resources */,
-				7AA2E9921743837600B17434 /* AuthBufferLogo@2x.png in Resources */,
-				7AA2E9931743837600B17434 /* Buffer-BufferLogin.png in Resources */,
-				7AA2E9941743837600B17434 /* Buffer-BufferLogin@2x.png in Resources */,
-				7AA2E9951743837600B17434 /* Buffer-ButtonArrow.png in Resources */,
-				7AA2E9961743837600B17434 /* Buffer-ButtonArrow@2x.png in Resources */,
-				7AA2E9971743837600B17434 /* Buffer-FacebookLogin.png in Resources */,
-				7AA2E9981743837600B17434 /* Buffer-FacebookLogin@2x.png in Resources */,
-				7AA2E9991743837600B17434 /* Buffer-TwitterLogin.png in Resources */,
-				7AA2E99A1743837600B17434 /* Buffer-TwitterLogin@2x.png in Resources */,
-				7AA2E99B1743837600B17434 /* BufferAvatarMask.png in Resources */,
-				7AA2E99C1743837600B17434 /* BufferAvatarMask@2x.png in Resources */,
-				7AA2E99D1743837600B17434 /* BufferButtonTitle.png in Resources */,
-				7AA2E99E1743837600B17434 /* BufferButtonTitle@2x.png in Resources */,
-				7AA2E99F1743837600B17434 /* BufferCloseButton.png in Resources */,
-				7AA2E9A01743837600B17434 /* BufferCloseButton@2x.png in Resources */,
-				7AA2E9A11743837600B17434 /* BufferGreenButton-highlighted.png in Resources */,
-				7AA2E9A21743837600B17434 /* BufferGreenButton-highlighted@2x.png in Resources */,
-				7AA2E9A31743837600B17434 /* BufferGreenButton.png in Resources */,
-				7AA2E9A41743837600B17434 /* BufferGreenButton@2x.png in Resources */,
-				7AA2E9A51743837600B17434 /* BufferGreyButton-highlighted.png in Resources */,
-				7AA2E9A61743837600B17434 /* BufferGreyButton-highlighted@2x.png in Resources */,
-				7AA2E9A71743837600B17434 /* BufferGreyButton.png in Resources */,
-				7AA2E9A81743837600B17434 /* BufferGreyButton@2x.png in Resources */,
-				7AA2E9A91743837600B17434 /* BufferIcon.png in Resources */,
-				7AA2E9AA1743837600B17434 /* BufferIcon@2x.png in Resources */,
-				7AA2E9AB1743837600B17434 /* BufferLargeGreenButton-active.png in Resources */,
-				7AA2E9AC1743837600B17434 /* BufferLargeGreenButton-active@2x.png in Resources */,
-				7AA2E9AD1743837600B17434 /* BufferLargeGreenButton.png in Resources */,
-				7AA2E9AE1743837600B17434 /* BufferLargeGreenButton@2x.png in Resources */,
-				7AA2E9AF1743837600B17434 /* BufferLargeGreyButton-active.png in Resources */,
-				7AA2E9B01743837600B17434 /* BufferLargeGreyButton-active@2x.png in Resources */,
-				7AA2E9B11743837600B17434 /* BufferLargeGreyButton.png in Resources */,
-				7AA2E9B21743837600B17434 /* BufferLargeGreyButton@2x.png in Resources */,
-				7AA2E9B31743837600B17434 /* BufferPaperclip-flipped.png in Resources */,
-				7AA2E9B41743837600B17434 /* BufferPaperclip-flipped@2x.png in Resources */,
-				7AA2E9B51743837600B17434 /* BufferPaperclip.png in Resources */,
-				7AA2E9B61743837600B17434 /* BufferPaperclip@2x.png in Resources */,
-				7AA2E9B71743837600B17434 /* BufferPendingCountBG.png in Resources */,
-				7AA2E9B81743837600B17434 /* BufferPendingCountBG@2x.png in Resources */,
-				7AA2E9B91743837600B17434 /* BufferPostButtonTitle.png in Resources */,
-				7AA2E9BA1743837600B17434 /* BufferPostButtonTitle@2x.png in Resources */,
-				7AA2E9BB1743837600B17434 /* BufferprofileCheckmark.png in Resources */,
-				7AA2E9BC1743837600B17434 /* BufferprofileCheckmark@2x.png in Resources */,
-				7AA2E9BD1743837600B17434 /* BufferProfileCountBG.png in Resources */,
-				7AA2E9BE1743837600B17434 /* BufferProfileCountBG@2x.png in Resources */,
-				7AA2E9BF1743837600B17434 /* BufferSheetBackground.png in Resources */,
-				7AA2E9C01743837600B17434 /* BufferSheetBackground@2x.png in Resources */,
-				7AA2E9C11743837600B17434 /* BufferSheetButton.png in Resources */,
-				7AA2E9C21743837600B17434 /* BufferSheetButton@2x.png in Resources */,
-				7AA2E9C31743837600B17434 /* BufferSheetButtonSelected.png in Resources */,
-				7AA2E9C41743837600B17434 /* BufferSheetButtonSelected@2x.png in Resources */,
-				7AA2E9C51743837600B17434 /* BufferSheetGreenButton.png in Resources */,
-				7AA2E9C61743837600B17434 /* BufferSheetGreenButton@2x.png in Resources */,
-				7AA2E9C71743837600B17434 /* BufferSheetGreenButtonSelected.png in Resources */,
-				7AA2E9C81743837600B17434 /* BufferSheetGreenButtonSelected@2x.png in Resources */,
-				7AA2E9C91743837600B17434 /* BufferSheetLogo.png in Resources */,
-				7AA2E9CA1743837600B17434 /* BufferSheetLogo@2x.png in Resources */,
-				7AA2E9CB1743837600B17434 /* BufferSheetNavigationBar.png in Resources */,
-				7AA2E9CC1743837600B17434 /* BufferSheetNavigationBar@2x.png in Resources */,
-				7AA2E9CD1743837600B17434 /* BufferSheetProfileSelectionGradient.png in Resources */,
-				7AA2E9CE1743837600B17434 /* BufferSheetProfileSelectionGradient@2x.png in Resources */,
-				7AA2E9CF1743837600B17434 /* BufferSheetShadow.png in Resources */,
-				7AA2E9D01743837600B17434 /* BufferSheetShadow@2x.png in Resources */,
-				7AA2E9D11743837600B17434 /* BufferSheetViewController.nib in Resources */,
-				7AA2E9D21743837600B17434 /* Buffertoolbar-profiles.png in Resources */,
-				7AA2E9D31743837600B17434 /* Buffertoolbar-profiles@2x.png in Resources */,
-				7AA2E9D41743837600B17434 /* LoginBufferLogo.png in Resources */,
-				7AA2E9D51743837600B17434 /* LoginBufferLogo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1439,10 +1237,6 @@
 		7A0406811740E3F6003404B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Submodules/buffer-ios-sdk/BufferSDK/BufferSDK.embeddedframework\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareKit demo app/ShareKit demo app-Prefix.pch";
 				INFOPLIST_FILE = "ShareKit demo app/ShareKit demo app-Info.plist";
@@ -1456,10 +1250,6 @@
 		7A0406821740E3F6003404B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Submodules/buffer-ios-sdk/BufferSDK/BufferSDK.embeddedframework\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareKit demo app/ShareKit demo app-Prefix.pch";
 				INFOPLIST_FILE = "ShareKit demo app/ShareKit demo app-Info.plist";
