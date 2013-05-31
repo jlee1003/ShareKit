@@ -232,13 +232,7 @@
 		7AECF40E171D52DB000722FA /* libYouTube SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AECF32C171D51C3000722FA /* libYouTube SDK.a */; };
 		7AECF40F171D52DF000722FA /* libYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AECF322171D5194000722FA /* libYouTube.a */; };
 		7AECF412171D55BD000722FA /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AECF2EE171D4679000722FA /* libGTLTouchStaticLib.a */; };
-		949202C6172A9BBD00DF9530 /* libBuffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 949BCB8C172A993000D706D4 /* libBuffer.a */; };
 		9492063917302B4C00DF9530 /* libKippt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AABBECFF162F0835009D46E4 /* libKippt.a */; };
-		949BCB97172A99AF00D706D4 /* SHKBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 949BCB95172A99AF00D706D4 /* SHKBuffer.h */; };
-		949BCB98172A99AF00D706D4 /* SHKBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 949BCB96172A99AF00D706D4 /* SHKBuffer.m */; };
-		94CC29011745399400C31CD8 /* BufferSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 94CC28FE1745399400C31CD8 /* BufferSDK.h */; };
-		94CC29021745399400C31CD8 /* libBufferSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CC29001745399400C31CD8 /* libBufferSDK.a */; };
-		94CC29071745399800C31CD8 /* BufferSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 94CC28FF1745399400C31CD8 /* BufferSDKResources.bundle */; };
 		AABBECB8162F063F009D46E4 /* SHKPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = BA465F1E14CC3C5A00B52394 /* SHKPrint.m */; };
 		AABBECC3162F0719009D46E4 /* SHKLogout.m in Sources */ = {isa = PBXBuildFile; fileRef = E68738BF1416795C00D8C3DD /* SHKLogout.m */; };
 		AABBECCC162F0756009D46E4 /* SHKCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536B911DBE3B9004A1712 /* SHKCopy.m */; };
@@ -705,13 +699,6 @@
 			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
 			remoteInfo = GTLTouchStaticLib;
 		};
-		949202C7172A9BC800DF9530 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 949BCB84172A993000D706D4;
-			remoteInfo = Buffer;
-		};
 		9492063117302B0700DF9530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -1169,12 +1156,6 @@
 		7AF78BB114B71FD8008ACA5D /* SHKFormControllerLargeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKFormControllerLargeTextField.h; sourceTree = "<group>"; };
 		7AF78BB214B71FD8008ACA5D /* SHKFormControllerLargeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFormControllerLargeTextField.m; sourceTree = "<group>"; };
 		90E765A51418F2480026B656 /* ShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareKit.bundle; sourceTree = "<group>"; };
-		949BCB8C172A993000D706D4 /* libBuffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBuffer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		949BCB95172A99AF00D706D4 /* SHKBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKBuffer.h; sourceTree = "<group>"; };
-		949BCB96172A99AF00D706D4 /* SHKBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKBuffer.m; sourceTree = "<group>"; };
-		94CC28FE1745399400C31CD8 /* BufferSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferSDK.h; sourceTree = "<group>"; };
-		94CC28FF1745399400C31CD8 /* BufferSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BufferSDKResources.bundle; sourceTree = "<group>"; };
-		94CC29001745399400C31CD8 /* libBufferSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBufferSDK.a; sourceTree = "<group>"; };
 		A57772B214BA0748003FC744 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		A57772B314BA0748003FC744 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		A57772B614BA1900003FC744 /* ObjectiveFlickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveFlickr.h; sourceTree = "<group>"; };
@@ -1582,7 +1563,6 @@
 				7AA2E9F91743E5B200B17434 /* libPocket SDK.a in Frameworks */,
 				7AA2E9FA1743E5B200B17434 /* libPocket.a in Frameworks */,
 				9492063917302B4C00DF9530 /* libKippt.a in Frameworks */,
-				949202C6172A9BBD00DF9530 /* libBuffer.a in Frameworks */,
 				7AECF412171D55BD000722FA /* libGTLTouchStaticLib.a in Frameworks */,
 				7AECF40F171D52DF000722FA /* libYouTube.a in Frameworks */,
 				7AECF40E171D52DB000722FA /* libYouTube SDK.a in Frameworks */,
@@ -1642,14 +1622,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		949BCB87172A993000D706D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94CC29021745399400C31CD8 /* libBufferSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1870,7 +1842,6 @@
 				7AA83BF91705E355009C483A /* libGoogle Plus SDK.a */,
 				7AECF322171D5194000722FA /* libYouTube.a */,
 				7AECF32C171D51C3000722FA /* libYouTube SDK.a */,
-				949BCB8C172A993000D706D4 /* libBuffer.a */,
 				7A4E465A173E2B2900CCEE80 /* libPocket.a */,
 				7A4E4663173E2C2500CCEE80 /* libPocket SDK.a */,
 				F61B5C8A1756F4A40020F690 /* libChineseSNS.a */,
@@ -2309,7 +2280,6 @@
 				F6ED05BC17564DEC00437F54 /* Renren */,
 				F6ED05B917564DDA00437F54 /* NetEase Weibo */,
 				F6ED05B21755E49B00437F54 /* Tencent Weibo */,
-				949BCB94172A998A00D706D4 /* Buffer */,
 				7A0F91CB156B9FCE009CB40A /* Delicious */,
 				B7EFCD8914C6B966004910F1 /* Diigo */,
 				DE334C0316F3315D00FF692B /* Dropbox */,
@@ -2771,27 +2741,6 @@
 				7AECF39A171D529D000722FA /* GTLYouTubeVideoTopicDetails.m */,
 			);
 			name = Generated;
-			sourceTree = "<group>";
-		};
-		949BCB94172A998A00D706D4 /* Buffer */ = {
-			isa = PBXGroup;
-			children = (
-				949BCB95172A99AF00D706D4 /* SHKBuffer.h */,
-				949BCB96172A99AF00D706D4 /* SHKBuffer.m */,
-				94AF3EC41745281D00069C17 /* BufferSDK */,
-			);
-			path = Buffer;
-			sourceTree = "<group>";
-		};
-		94AF3EC41745281D00069C17 /* BufferSDK */ = {
-			isa = PBXGroup;
-			children = (
-				94CC28FE1745399400C31CD8 /* BufferSDK.h */,
-				94CC28FF1745399400C31CD8 /* BufferSDKResources.bundle */,
-				94CC29001745399400C31CD8 /* libBufferSDK.a */,
-			);
-			name = BufferSDK;
-			path = "../../../../../Submodules/buffer-ios-sdk/BufferSDK";
 			sourceTree = "<group>";
 		};
 		A57772B514BA1900003FC744 /* ObjectiveFlickr */ = {
@@ -3552,15 +3501,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		949BCB88172A993000D706D4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				949BCB97172A99AF00D706D4 /* SHKBuffer.h in Headers */,
-				94CC29011745399400C31CD8 /* BufferSDK.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AABBECBA162F063F009D46E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3981,7 +3921,6 @@
 				7A4E4667173E2C5300CCEE80 /* PBXTargetDependency */,
 				7A4E4665173E2C4F00CCEE80 /* PBXTargetDependency */,
 				9492063217302B0700DF9530 /* PBXTargetDependency */,
-				949202C8172A9BC800DF9530 /* PBXTargetDependency */,
 				7AECF411171D55B7000722FA /* PBXTargetDependency */,
 				7AECF40D171D52D4000722FA /* PBXTargetDependency */,
 				7AECF40B171D52D0000722FA /* PBXTargetDependency */,
@@ -4075,23 +4014,6 @@
 			name = "YouTube SDK";
 			productName = ShareKitLibrary;
 			productReference = 7AECF32C171D51C3000722FA /* libYouTube SDK.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		949BCB84172A993000D706D4 /* Buffer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 949BCB89172A993000D706D4 /* Build configuration list for PBXNativeTarget "Buffer" */;
-			buildPhases = (
-				949BCB85172A993000D706D4 /* Sources */,
-				949BCB87172A993000D706D4 /* Frameworks */,
-				949BCB88172A993000D706D4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Buffer;
-			productName = ShareKitLibrary;
-			productReference = 949BCB8C172A993000D706D4 /* libBuffer.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AABBECB6162F063F009D46E4 /* Print */ = {
@@ -4558,7 +4480,6 @@
 				AABBECF7162F0835009D46E4 /* Kippt */,
 				AABBED63162F0C03009D46E4 /* LinkedIn */,
 				AABBED6C162F0C1A009D46E4 /* Pinboard */,
-				949BCB84172A993000D706D4 /* Buffer */,
 				AABBED7E162F0C4D009D46E4 /* Tumbl */,
 				7A1AFD2B160E14340086B98A /* Twitter */,
 				AABBED12162F08A3009D46E4 /* VKontakte */,
@@ -4657,7 +4578,6 @@
 				F61B5C271756DC190020F690 /* delete@2x.png in Resources */,
 				F61B5C281756DC190020F690 /* logo.png in Resources */,
 				F61B5C291756DC190020F690 /* logo@2x.png in Resources */,
-				94CC29071745399800C31CD8 /* BufferSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4911,14 +4831,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AECF39F171D529D000722FA /* GTLYouTube_Sources.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		949BCB85172A993000D706D4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				949BCB98172A99AF00D706D4 /* SHKBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5374,11 +5286,6 @@
 			isa = PBXTargetDependency;
 			name = GTLTouchStaticLib;
 			targetProxy = 7AECF410171D55B7000722FA /* PBXContainerItemProxy */;
-		};
-		949202C8172A9BC800DF9530 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 949BCB84172A993000D706D4 /* Buffer */;
-			targetProxy = 949202C7172A9BC800DF9530 /* PBXContainerItemProxy */;
 		};
 		9492063217302B0700DF9530 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6366,57 +6273,6 @@
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Submodules/google-api-objectivec\"/** \"$(PROJECT_TEMP_DIR)/../UninstalledProducts/google-api-objectivec\"";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		949BCB8A172A993000D706D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/ShareKitLibrary.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				LIBRARY_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Submodules/buffer-ios-sdk\"/**";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = Buffer;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Submodules/buffer-ios-sdk\"";
-			};
-			name = Debug;
-		};
-		949BCB8B172A993000D706D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/ShareKitLibrary.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
-				GCC_THUMB_SUPPORT = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				LIBRARY_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Submodules/buffer-ios-sdk\"/**";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = Buffer;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Submodules/buffer-ios-sdk\"";
 			};
 			name = Release;
 		};
@@ -7730,15 +7586,6 @@
 			buildConfigurations = (
 				7AECF32A171D51C3000722FA /* Debug */,
 				7AECF32B171D51C3000722FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		949BCB89172A993000D706D4 /* Build configuration list for PBXNativeTarget "Buffer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				949BCB8A172A993000D706D4 /* Debug */,
-				949BCB8B172A993000D706D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
