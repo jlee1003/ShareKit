@@ -631,6 +631,43 @@
 
 
 
+
+// Tencent Weibo - http://open.t.qq.com/
+- (NSString*)tencentWeiboConsumerKey
+{
+    return @"";
+}
+
+- (NSString*)tencentWeiboConsumerSecret
+{
+    return @"";
+}
+
+- (NSString*)tencentWeiboCallbackUrl
+{
+    return @"";
+}
+
+
+// RenRen - http://dev.renren.com/
+- (NSString*)renrenAppId
+{
+    return @"";
+}
+
+- (NSString*)renrenConsumerKey
+{
+    return @"";
+}
+
+- (NSString*)renrenConsumerSecret
+{
+    return @"";
+}
+
+
+
+
 /* SHKTextMessage */
 
 //You can use this to prefill recipients. User enters them in MFMessageComposeViewController by default. Should be array of NSStrings.

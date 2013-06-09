@@ -62,6 +62,9 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return ([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]);
 }
 
+-(BOOL)quiet{
+    return YES;
+}
 
 #pragma mark -
 #pragma mark Configuration : Dynamic Enable

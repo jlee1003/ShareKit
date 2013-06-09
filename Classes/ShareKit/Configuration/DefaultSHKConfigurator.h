@@ -158,4 +158,11 @@
 - (NSString*)tencentWeixinAppId;
 - (NSString*)tencentWeixinAppKey;
 
+- (NSString*)tencentWeiboConsumerKey;
+- (NSString*)tencentWeiboConsumerSecret;
+- (NSString*)tencentWeiboCallbackUrl;
+
+- (NSString*)renrenAppId;
+- (NSString*)renrenConsumerKey;
+- (NSString*)renrenConsumerSecret;
 @end

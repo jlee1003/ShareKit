@@ -104,12 +104,12 @@ typedef enum {
     
     if (errorMsg != nil)
     {
-        [[[[UIAlertView alloc]
+       /* [[[[UIAlertView alloc]
            initWithTitle:@"Error Configuring Session" message:errorMsg
            delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]
           autorelease]
          show];
-        return nil;
+        return nil;*/
     }
     //End reminder
     
