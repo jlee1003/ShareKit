@@ -720,6 +720,13 @@
 			remoteGlobalIDString = B9CBC519152537270036AA71;
 			remoteInfo = FacebookSDKTests;
 		};
+		DD8CB76F1764985700DE82A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA6C09EA16122ED90023EE48 /* facebook-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85A44B9F16A8CE05007BE80E;
+			remoteInfo = FacebookSDKIntegrationTests;
+		};
 		DE334C2F16F333B000FF692B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -2763,6 +2770,7 @@
 			children = (
 				AA6C09F316122ED90023EE48 /* libfacebook_ios_sdk.a */,
 				AA7585701624AABF001EFCBE /* FacebookSDKTests.octest */,
+				DD8CB7701764985700DE82A9 /* FacebookSDKIntegrationTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4538,6 +4546,13 @@
 			fileType = wrapper.cfbundle;
 			path = FacebookSDKTests.octest;
 			remoteRef = AA75856F1624AABF001EFCBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD8CB7701764985700DE82A9 /* FacebookSDKIntegrationTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FacebookSDKIntegrationTests.octest;
+			remoteRef = DD8CB76F1764985700DE82A9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
