@@ -27,7 +27,7 @@
 //
 
 #import "SHKNetEaseWeibo.h"
-#import "JSONKit.h"
+#import "NSString+SBJSON.h"
 #import "SHKConfiguration.h"
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 
@@ -337,7 +337,7 @@ static NSString *const kSHKNetEaseWeiboUserInfo = @"kSHKNetEaseWeiboUserInfo";
     
     @try 
     {
-        NSArray *result = [[aRequest getResult] objectFromJSONString];
+        NSArray *result = [[aRequest getResult] JSONValue];
         self.item.URL = [NSURL URLWithString:[[result objectAtIndex:0] objectForKey:@"url_short"]];
     }
     @catch (NSException *exception) 
@@ -545,8 +545,9 @@ static NSString *const kSHKNetEaseWeiboUserInfo = @"kSHKNetEaseWeiboUserInfo";
         
         @try 
         {
+            NSString* str = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
             // Finished uploading Image, now need to posh the message and url in netease weibo
-            NSDictionary *result = [data objectFromJSONData];
+            NSDictionary *result = [str JSONValue];
             [self.item setCustomValue:[NSString stringWithFormat:@"%@ %@",  [self.item customValueForKey:@"status"], [result objectForKey:@"upload_image_url"]]  
                           forKey:@"status"];
 			

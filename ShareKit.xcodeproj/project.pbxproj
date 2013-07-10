@@ -347,13 +347,11 @@
 		F61B5C541756DC190020F690 /* WBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C141756DC190020F690 /* WBUtil.m */; };
 		F61B5C5A1756DFF90020F690 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C581756DFF90020F690 /* MBProgressHUD.h */; };
 		F61B5C5B1756DFF90020F690 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C591756DFF90020F690 /* MBProgressHUD.m */; };
-		F61B5C6C1756F3140020F690 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C6A1756F3120020F690 /* JSONKit.h */; };
 		F61B5C8B1756F4BC0020F690 /* SHKSinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A38D16597CCC0089ABE8 /* SHKSinaWeibo.m */; };
 		F61B5C8C1756F4C60020F690 /* SHKRenRen.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED060B17564DEC00437F54 /* SHKRenRen.m */; };
 		F61B5C8D1756F4D60020F690 /* SHKTencentWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05B41755E49B00437F54 /* SHKTencentWeibo.m */; };
 		F61B5C8E1756F4D60020F690 /* TencentOAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05B61755E49B00437F54 /* TencentOAMutableURLRequest.m */; };
 		F61B5C8F1756F4D60020F690 /* TencentOAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05B81755E49B00437F54 /* TencentOAuthView.m */; };
-		F61B5C901756F4DA0020F690 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C6B1756F3130020F690 /* JSONKit.m */; };
 		F61B5C911756F4DF0020F690 /* SHKNetEaseWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05BB17564DDA00437F54 /* SHKNetEaseWeibo.m */; };
 		F61B5C921756F5250020F690 /* ROError.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05C117564DEC00437F54 /* ROError.m */; };
 		F61B5C931756F5250020F690 /* ROAlbumsInfoRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05D317564DEC00437F54 /* ROAlbumsInfoRequestParam.m */; };
@@ -1358,8 +1356,6 @@
 		F61B5C161756DC190020F690 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F61B5C581756DFF90020F690 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F61B5C591756DFF90020F690 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		F61B5C6A1756F3120020F690 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		F61B5C6B1756F3130020F690 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		F61B5C8A1756F4A40020F690 /* libChineseSNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChineseSNS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6742A6F175706F200BC3D32 /* closeweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeweibo.png; sourceTree = "<group>"; };
 		F6742A70175706F200BC3D32 /* closeweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeweibo@2x.png"; sourceTree = "<group>"; };
@@ -1868,8 +1864,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				F61B5C6A1756F3120020F690 /* JSONKit.h */,
-				F61B5C6B1756F3130020F690 /* JSONKit.m */,
 				F61B5C581756DFF90020F690 /* MBProgressHUD.h */,
 				F61B5C591756DFF90020F690 /* MBProgressHUD.m */,
 				F61B5BDE1756DC190020F690 /* SinaWeiBoSDK */,
@@ -3434,7 +3428,6 @@
 				F61B5C501756DC190020F690 /* WBSendView.h in Headers */,
 				F61B5C531756DC190020F690 /* WBUtil.h in Headers */,
 				F61B5C5A1756DFF90020F690 /* MBProgressHUD.h in Headers */,
-				F61B5C6C1756F3140020F690 /* JSONKit.h in Headers */,
 				F6742A951757348700BC3D32 /* SHKTencentWeixin.h in Headers */,
 				F6742A9E1757354900BC3D32 /* WXApi.h in Headers */,
 				F6742A9F1757354900BC3D32 /* WXApiObject.h in Headers */,
@@ -5099,7 +5092,6 @@
 				F61B5CA61756F5250020F690 /* ROGlobalStyle.m in Sources */,
 				F61B5CA71756F5250020F690 /* ROImageView.m in Sources */,
 				F61B5C911756F4DF0020F690 /* SHKNetEaseWeibo.m in Sources */,
-				F61B5C901756F4DA0020F690 /* JSONKit.m in Sources */,
 				F61B5C8D1756F4D60020F690 /* SHKTencentWeibo.m in Sources */,
 				F6D7869417573B2700B7BB6C /* SHKTencentWeixin.m in Sources */,
 				F61B5C8E1756F4D60020F690 /* TencentOAMutableURLRequest.m in Sources */,

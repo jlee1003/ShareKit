@@ -35,7 +35,7 @@
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 #import "TencentOAMutableURLRequest.h"
 #import "TencentOAuthView.h"
-#import "JSONKit.h"
+#import "NSString+SBJSON.h"
 
 static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 
@@ -233,7 +233,7 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
     
     @try 
     {
-        NSArray *result = [[aRequest getResult] objectFromJSONString];
+        NSArray *result = [[aRequest getResult] JSONValue];
         self.item.URL = [NSURL URLWithString:[[result objectAtIndex:0] objectForKey:@"url_short"]];
     }
     @catch (NSException *exception) 
@@ -343,13 +343,14 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 
 
 - (void)sendStatusTicket:(OAServiceTicket *)ticket finishedWithData:(NSMutableData *)data 
-{	
+{
+    NSString* str = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
     if (SHKDebugShowLogs) // check so we don't have to alloc the string with the data if we aren't logging
-		SHKLog(@"sendStatusTicket Response Body: %@", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]);
+		SHKLog(@"sendStatusTicket Response Body: %@", str);
     
 	if (ticket.didSucceed) 
     {
-        NSDictionary *result = [data objectFromJSONData];
+        NSDictionary *result = [str JSONValue];
         
         if ([[result valueForKey:@"ret"] intValue] == 0)
             [self sendDidFinish];
@@ -452,11 +453,12 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 - (void)sendImageTicket:(OAServiceTicket *)ticket finishedWithData:(NSMutableData *)data
 {
 	// TODO better error handling here
-    SHKLog(@"%@", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]);
+    NSString* str = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    SHKLog(@"%@", str);
     
     if (ticket.didSucceed) 
     {
-        NSDictionary *result = [data objectFromJSONData];
+        NSDictionary *result = [str JSONValue];
         
         if ([[result valueForKey:@"ret"] intValue] == 0)
             [self sendDidFinish];
