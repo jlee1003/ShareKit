@@ -27,7 +27,7 @@
 //
 
 #import "SHKNetEaseWeibo.h"
-#import "NSString+SBJSON.h"
+#import "JSON.h"
 #import "SHKConfiguration.h"
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 

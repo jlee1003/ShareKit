@@ -35,7 +35,7 @@
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 #import "TencentOAMutableURLRequest.h"
 #import "TencentOAuthView.h"
-#import "NSString+SBJSON.h"
+#import "JSON.h"
 
 static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 

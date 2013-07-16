@@ -172,7 +172,7 @@
 {
 	
 	NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-	SBJSON *jsonParser = [[SBJSON alloc]init];
+	SBJsonParser *jsonParser = [[SBJsonParser alloc]init];
 	
 	NSError *parseError = nil;
 	id result = [jsonParser objectWithString:dataString error:&parseError];
@@ -188,7 +188,6 @@
 	}
         
 	[dataString release];
-	[jsonParser release];
 	
     
 	if ([result isKindOfClass:[NSDictionary class]])
