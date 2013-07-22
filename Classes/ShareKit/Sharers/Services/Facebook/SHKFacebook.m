@@ -329,8 +329,9 @@ static SHKFacebook *requestingPermisSHKFacebook=nil;
     if ([SHKCONFIG(forcePreIOS6FacebookPosting) boolValue])
         return NO;
     
-	if (NSClassFromString(@"SLComposeViewController"))
-		return YES;
+	if (NSClassFromString(@"SLComposeViewController")){
+		return [SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook];
+	}
 	
 	return NO;
 }

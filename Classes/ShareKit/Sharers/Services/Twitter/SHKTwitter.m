@@ -143,7 +143,7 @@ static NSString *const kSHKTwitterUserInfo=@"kSHKTwitterUserInfo";
     }
     
 	if (NSClassFromString(@"TWTweetComposeViewController")) {
-		return YES;
+		return [NSClassFromString(@"TWTweetComposeViewController") canSendTweet];
 	}
 	
 	return NO;
@@ -158,7 +158,7 @@ static NSString *const kSHKTwitterUserInfo=@"kSHKTwitterUserInfo";
     
 	if (NSClassFromString(@"SLComposeViewController"))
     {
-		return YES;
+		return [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter];
 	}
 	
 	return NO;
