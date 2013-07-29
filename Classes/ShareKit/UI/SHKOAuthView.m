@@ -51,13 +51,13 @@
 		
 		self.delegate = d;
 		
-		UIWebView *aWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+		UIWebView *aWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
 		webView = [aWebView retain];
         [aWebView release];
 		webView.delegate = self;
 		webView.scalesPageToFit = YES;
 		webView.dataDetectorTypes = UIDataDetectorTypeNone;
-				
+		webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		[webView loadRequest:[NSURLRequest requestWithURL:authorizeURL]];		
 		
     }

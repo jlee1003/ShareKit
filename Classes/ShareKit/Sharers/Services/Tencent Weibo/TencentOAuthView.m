@@ -28,13 +28,14 @@
 //
 
 #import "TencentOAuthView.h"
-
+#import "SHK.h"
+#import "SHKConfiguration.h"
 @implementation TencentOAuthView
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
-{		
-	if ([request.URL.absoluteString rangeOfString:@"authorize"].location != NSNotFound
-        && [request.URL.absoluteString rangeOfString:@"checkType=verifycode"].location != NSNotFound)
+{
+	SHKLog(@"webView startLoad: %@", request.URL.absoluteString);
+	if ([request.URL.absoluteString rangeOfString:SHKCONFIG(tencentWeiboCallbackUrl)].location != NSNotFound)
 	{
 		// Get query
 		NSMutableDictionary *queryParams = nil;

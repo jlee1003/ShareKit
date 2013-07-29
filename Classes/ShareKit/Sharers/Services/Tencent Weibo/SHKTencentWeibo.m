@@ -60,9 +60,9 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 		// -- //
 		
 		// You do not need to edit these, they are the same for everyone
-		self.authorizeURL = [NSURL URLWithString:@"https://open.t.qq.com/cgi-bin/authorize"];
+		self.authorizeURL = [NSURL URLWithString:@"http://open.t.qq.com/cgi-bin/authorize"];
 		self.requestURL = [NSURL URLWithString:@"https://open.t.qq.com/cgi-bin/request_token"];
-		self.accessURL = [NSURL URLWithString:@"https://open.t.qq.com/cgi-bin/access_token"];
+		self.accessURL = [NSURL URLWithString:@"http://open.t.qq.com/cgi-bin/access_token"];
 	}	
 	return self;
 }
