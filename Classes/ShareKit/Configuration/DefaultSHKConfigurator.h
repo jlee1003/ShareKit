@@ -30,7 +30,10 @@
  ------
  To show ShareKit specific debug output in the console, define _SHKDebugShowLogs (uncomment next line).
  */
+#ifdef __OPTIMIZE__
+#else
 #define _SHKDebugShowLogs
+#endif
 
 #ifdef _SHKDebugShowLogs
 #define SHKDebugShowLogs			1

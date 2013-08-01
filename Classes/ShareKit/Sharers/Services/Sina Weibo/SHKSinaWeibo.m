@@ -32,46 +32,20 @@
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 
 @implementation SHKSinaWeibo
-@synthesize weibo,hub;
-
-
-static SHKSinaWeibo *sharedWeiboOauth2 = nil;
-
-+ (SHKSinaWeibo *)sharedSHKSinaWeiboOAuth2
-{
-    if ( ! sharedWeiboOauth2)
-    {
-        sharedWeiboOauth2 = [[SHKSinaWeibo alloc] init];
-    }
-    
-    return sharedWeiboOauth2;
-}
-
 -(void)dealloc{
-    self.weibo = nil;
     [super dealloc];
 }
--(oneway void)release{}
-- (id)init
-{
-    if (!sharedWeiboOauth2) {
-        self = [super init];
-        if (self)
-        {
-            self.weibo = [[[WBEngine alloc] initWithAppKey:SHKCONFIG(sinaWeiboConsumerKey) appSecret:SHKCONFIG(sinaWeiboConsumerSecret)] autorelease];
-            [self.weibo setRootViewController:self];
-            [self.weibo setDelegate:self];
-            [self.weibo setRedirectURI:SHKCONFIG(sinaWeiboCallbackUrl)];
-            [self.weibo setIsUserExclusive:NO];
-            //[self.weibo logOut];
-        }
-        sharedWeiboOauth2 = [self retain];
-        return self;
+-(id)init{
+    self = [super init];
+    if (self) {
+#ifdef _SHKDebugShowLogs
+        
+        [WeiboSDK enableDebugMode:YES];
+#endif
+        [WeiboSDK registerApp:SHKCONFIG(sinaWeiboConsumerKey)];
     }
-    [super release];
-    return sharedWeiboOauth2;
+    return self;
 }
-
 
 #pragma mark -
 #pragma mark Configuration : Service Defination
@@ -110,17 +84,16 @@ static SHKSinaWeibo *sharedWeiboOauth2 = nil;
 
 - (BOOL)isAuthorized
 {
-	return [weibo isLoggedIn] && ![weibo isAuthorizeExpired];
+	return YES;
 }
 
 - (void)promptAuthorization
 {
-    [weibo logIn];
 }
 
 + (void)logout
 {
-    [[self sharedSHKSinaWeiboOAuth2].weibo logOut] ;
+    
 }
 
 #pragma mark -
@@ -128,145 +101,42 @@ static SHKSinaWeibo *sharedWeiboOauth2 = nil;
 
 - (void)show
 {
-    if (self.item.shareType == SHKShareTypeURL)
-	{
-        [self.item setCustomValue:[self.item.URL.absoluteString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
-                      forKey:@"status"];
-        
-		[self showWeiboForm];
-	}
-    
-    else if (self.item.shareType == SHKShareTypeImage)
-	{
-		[self showWeiboPublishPhotoDialog];
-	}
-	
-	else if (self.item.shareType == SHKShareTypeText)
-	{
-        [self.item setCustomValue:self.item.text forKey:@"status"];
-		[self showWeiboForm];
-	}
+    [self _sendToWeibo];
 }
-
-- (void)showWeiboForm
-{
-    
-    WBSendView *sendView = [[WBSendView alloc] initWithAppKey:SHKCONFIG(sinaWeiboConsumerKey) appSecret:SHKCONFIG(sinaWeiboConsumerSecret) text:[self.item customValueForKey:@"status"] image:nil];
-    [sendView setDelegate:self];
-    
-    [sendView show:YES];
-    [sendView release];
-    
-    
-}
-
-- (void)showWeiboPublishPhotoDialog
-{
-    WBSendView *sendView = [[WBSendView alloc] initWithAppKey:SHKCONFIG(sinaWeiboConsumerKey) appSecret:SHKCONFIG(sinaWeiboConsumerSecret) text:self.item.title image:self.item.image];
-    [sendView setDelegate:self];
-    
-    [sendView show:YES];
-    [sendView release];
-}
-
 
 #pragma mark -
 #pragma mark Share API Methods
 
-- (BOOL)validateItem
-{
-	if (self.item.shareType == SHKShareTypeUserInfo) {
-		return YES;
-	}
-	
-	NSString *status = [self.item customValueForKey:@"status"];
-	return status != nil;
-}
-
-- (BOOL)validateItemAfterUserEdit
-{
-	BOOL result = NO;
-	
-	BOOL isValid = [self validateItem];
-	NSString *status = [self.item customValueForKey:@"status"];
-	
-	if (isValid && status.length <= 140) {
-		result = YES;
-	}
-	
-    return result;
-}
-
-- (BOOL)send
-{
+-(void)_sendToWeibo{
+    WBMessageObject *message = [WBMessageObject message];
     
-	if ( ! [self validateItemAfterUserEdit]){
-        return NO;
+    if (self.item.text){
+        message.text = self.item.text;
     }
+    if (self.item.image) {
+        WBImageObject *image = [WBImageObject object];
+        image.imageData = UIImagePNGRepresentation(self.item.image);
+        
+        message.imageObject = image;
+        if (!message.text) {
+            message.text = self.item.title;
+        }
+    }
+    if (self.item.URL) {
+        WBWebpageObject *webpage = [WBWebpageObject object];
+        webpage.objectID = self.item.URL.absoluteString;
+        if (self.item.title)
+            webpage.title = self.item.title;
+        else
+            webpage.title = self.item.URL.absoluteString;
+        
+        webpage.webpageUrl = self.item.URL.absoluteString;
+        message.mediaObject = webpage;
+    }
+    WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:message];
     
+    [WeiboSDK sendRequest:request];
     
-	
-	else
-	{
-        // TODO
-	}
-	
-    
-    
-	return NO;
-}
-
-- (void)sendViewDidFinishSending:(WBSendView *)view
-{
-    NSLog(@"SUCCESS!!!");
-    //self.hub.removeFromSuperViewOnHide = YES;
-    //[self.hub hide:YES];
-    [view hide:YES];
-    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil
-													   message:@"微博发送成功！"
-													  delegate:nil
-											 cancelButtonTitle:@"确定"
-											 otherButtonTitles:nil];
-	[alertView show];
-	[alertView release];
-}
-
-- (void)sendView:(WBSendView *)view didFailWithError:(NSError *)error
-{
-    NSLog(@"didFailWithError: %@", error);
-    [view hide:YES];
-    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:nil
-													   message:@"微博发送失败！"
-													  delegate:nil
-											 cancelButtonTitle:@"确定"
-											 otherButtonTitles:nil];
-	[alertView show];
-	[alertView release];
-}
-#pragma mark - WEEngineDelegate methods
-- (void)engineAlreadyLoggedIn:(WBEngine *)engine{
-    
-    [self show];
-}
-
-- (void)engineDidLogIn:(WBEngine *)engine{
-    [self show];
-}
-
-- (void)engine:(WBEngine *)engine didFailToLogInWithError:(NSError *)error{
-    
-	[self sendDidFailWithError:error];
-}
-
-- (void)engineDidLogOut:(WBEngine *)engine{
-    
-}
-- (void)engine:(WBEngine *)engine requestDidFailWithError:(NSError *)error{
-    [self sendDidFailWithError:[SHK error:SHKLocalizedString([error localizedDescription])]];
-}
-- (void)engine:(WBEngine *)engine requestDidSucceedWithResult:(id)result{
-    
-    [self sendDidFinish];
 }
 
 @end

@@ -28,23 +28,13 @@
 //
 
 #import "SHKSharer.h"
-#import "SHKFormControllerLargeTextField.h"
-#import "WBEngine.h"
-#import "WBSendView.h"
-#import "MBProgressHUD.h"
+#import "WeiboSDK.h"
 
-@interface SHKSinaWeibo : SHKSharer <WBEngineDelegate, WBSendViewDelegate>
+@interface SHKSinaWeibo : SHKSharer
 {
-    MBProgressHUD *hub;
+    
 }
 
-@property (retain) WBEngine *weibo;
-@property(nonatomic,retain)MBProgressHUD *hub;
 
-#pragma mark -
-#pragma mark UI Implementation
-
-- (void)showWeiboForm;
-- (void)showWeiboPublishPhotoDialog;
 
 @end

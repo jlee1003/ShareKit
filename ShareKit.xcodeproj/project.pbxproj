@@ -187,6 +187,9 @@
 		7AC28F27165A21C2006D7441 /* libTumblr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AABBED86162F0C4D009D46E4 /* libTumblr.a */; };
 		7AC28F28165A21C2006D7441 /* libTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1AFD3A160E14340086B98A /* libTwitter.a */; };
 		7AC28F29165A21C2006D7441 /* libVKontakte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AABBED1B162F08A3009D46E4 /* libVKontakte.a */; };
+		7AC9550717AAB47200A200AD /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9550317AAB47200A200AD /* libWeiboSDK.a */; };
+		7AC9550817AAB47300A200AD /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9550417AAB47200A200AD /* WeiboSDK.bundle */; };
+		7AC9550917AAB47300A200AD /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC9550517AAB47200A200AD /* WeiboSDK.h */; };
 		7AD9861D16E78D730052A5B8 /* NSData+SaveItemAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD9861B16E78D730052A5B8 /* NSData+SaveItemAttachment.h */; };
 		7AD9861E16E78D730052A5B8 /* NSData+SaveItemAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9861C16E78D730052A5B8 /* NSData+SaveItemAttachment.m */; };
 		7AE8DC7C165B549B004D99D2 /* DummyLibFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE8DC7A165B549B004D99D2 /* DummyLibFile.h */; };
@@ -328,36 +331,6 @@
 		F61B5C171756DC190020F690 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5BE01756DC190020F690 /* GTMBase64.h */; };
 		F61B5C181756DC190020F690 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5BE11756DC190020F690 /* GTMBase64.m */; };
 		F61B5C1A1756DC190020F690 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5BE21756DC190020F690 /* GTMDefines.h */; };
-		F61B5C1B1756DC190020F690 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BE31756DC190020F690 /* Localizable.strings */; };
-		F61B5C1C1756DC190020F690 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BE71756DC190020F690 /* bg.png */; };
-		F61B5C1D1756DC190020F690 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BE81756DC190020F690 /* bg@2x.png */; };
-		F61B5C1E1756DC190020F690 /* bg_land.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BE91756DC190020F690 /* bg_land.png */; };
-		F61B5C1F1756DC190020F690 /* bg_land@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BEA1756DC190020F690 /* bg_land@2x.png */; };
-		F61B5C201756DC190020F690 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BEB1756DC190020F690 /* btn.png */; };
-		F61B5C211756DC190020F690 /* btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BEC1756DC190020F690 /* btn@2x.png */; };
-		F61B5C221756DC190020F690 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BED1756DC190020F690 /* close.png */; };
-		F61B5C231756DC190020F690 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BEE1756DC190020F690 /* close@2x.png */; };
-		F61B5C241756DC190020F690 /* close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BEF1756DC190020F690 /* close_btn.png */; };
-		F61B5C251756DC190020F690 /* close_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BF01756DC190020F690 /* close_btn@2x.png */; };
-		F61B5C261756DC190020F690 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BF11756DC190020F690 /* delete.png */; };
-		F61B5C271756DC190020F690 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BF21756DC190020F690 /* delete@2x.png */; };
-		F61B5C281756DC190020F690 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BF31756DC190020F690 /* logo.png */; };
-		F61B5C291756DC190020F690 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61B5BF41756DC190020F690 /* logo@2x.png */; };
-		F61B5C401756DC190020F690 /* WBAuthorize.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C061756DC190020F690 /* WBAuthorize.h */; };
-		F61B5C411756DC190020F690 /* WBAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C071756DC190020F690 /* WBAuthorize.m */; };
-		F61B5C431756DC190020F690 /* WBAuthorizeWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C081756DC190020F690 /* WBAuthorizeWebView.h */; };
-		F61B5C441756DC190020F690 /* WBAuthorizeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C091756DC190020F690 /* WBAuthorizeWebView.m */; };
-		F61B5C461756DC190020F690 /* WBEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C0A1756DC190020F690 /* WBEngine.h */; };
-		F61B5C471756DC190020F690 /* WBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C0B1756DC190020F690 /* WBEngine.m */; };
-		F61B5C491756DC190020F690 /* WBLogInAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C0C1756DC190020F690 /* WBLogInAlertView.h */; };
-		F61B5C4A1756DC190020F690 /* WBLogInAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C0D1756DC190020F690 /* WBLogInAlertView.m */; };
-		F61B5C4C1756DC190020F690 /* WBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C0E1756DC190020F690 /* WBRequest.h */; };
-		F61B5C4D1756DC190020F690 /* WBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C0F1756DC190020F690 /* WBRequest.m */; };
-		F61B5C4F1756DC190020F690 /* WBSDKGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C101756DC190020F690 /* WBSDKGlobal.h */; };
-		F61B5C501756DC190020F690 /* WBSendView.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C111756DC190020F690 /* WBSendView.h */; };
-		F61B5C511756DC190020F690 /* WBSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C121756DC190020F690 /* WBSendView.m */; };
-		F61B5C531756DC190020F690 /* WBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C131756DC190020F690 /* WBUtil.h */; };
-		F61B5C541756DC190020F690 /* WBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C141756DC190020F690 /* WBUtil.m */; };
 		F61B5C5A1756DFF90020F690 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B5C581756DFF90020F690 /* MBProgressHUD.h */; };
 		F61B5C5B1756DFF90020F690 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B5C591756DFF90020F690 /* MBProgressHUD.m */; };
 		F61B5C8B1756F4BC0020F690 /* SHKSinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A38D16597CCC0089ABE8 /* SHKSinaWeibo.m */; };
@@ -406,8 +379,6 @@
 		F61B5CB91756F5F00020F690 /* ROPublishPhotoInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05FF17564DEC00437F54 /* ROPublishPhotoInternal.m */; };
 		F61B5CBA1756F5FB0020F690 /* RODialogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05F817564DEC00437F54 /* RODialogModel.m */; };
 		F61B5CBB1756F5FB0020F690 /* RODialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05FA17564DEC00437F54 /* RODialogView.m */; };
-		F6742A71175706FA00BC3D32 /* closeweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6742A6F175706F200BC3D32 /* closeweibo.png */; };
-		F6742A72175706FD00BC3D32 /* closeweibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6742A70175706F200BC3D32 /* closeweibo@2x.png */; };
 		F6742A951757348700BC3D32 /* SHKTencentWeixin.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A931757348700BC3D32 /* SHKTencentWeixin.h */; };
 		F6742A9E1757354900BC3D32 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A9A1757354900BC3D32 /* WXApi.h */; };
 		F6742A9F1757354900BC3D32 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A9B1757354900BC3D32 /* WXApiObject.h */; };
@@ -1072,6 +1043,9 @@
 		7ABCDBAF157757D1003BBFFD /* SHKFormFieldCellOptionPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFormFieldCellOptionPicker.m; sourceTree = "<group>"; };
 		7AC2A38C16597CCC0089ABE8 /* SHKSinaWeibo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKSinaWeibo.h; sourceTree = "<group>"; };
 		7AC2A38D16597CCC0089ABE8 /* SHKSinaWeibo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKSinaWeibo.m; sourceTree = "<group>"; };
+		7AC9550317AAB47200A200AD /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		7AC9550417AAB47200A200AD /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		7AC9550517AAB47200A200AD /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		7AD9861B16E78D730052A5B8 /* NSData+SaveItemAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SaveItemAttachment.h"; sourceTree = "<group>"; };
 		7AD9861C16E78D730052A5B8 /* NSData+SaveItemAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SaveItemAttachment.m"; sourceTree = "<group>"; };
 		7AE8DC7A165B549B004D99D2 /* DummyLibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyLibFile.h; path = ShareKitLibrary/DummyLibFile.h; sourceTree = "<group>"; };
@@ -1348,43 +1322,9 @@
 		F61B5BE01756DC190020F690 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F61B5BE11756DC190020F690 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		F61B5BE21756DC190020F690 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		F61B5BE41756DC190020F690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F61B5BE71756DC190020F690 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
-		F61B5BE81756DC190020F690 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
-		F61B5BE91756DC190020F690 /* bg_land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_land.png; sourceTree = "<group>"; };
-		F61B5BEA1756DC190020F690 /* bg_land@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_land@2x.png"; sourceTree = "<group>"; };
-		F61B5BEB1756DC190020F690 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
-		F61B5BEC1756DC190020F690 /* btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn@2x.png"; sourceTree = "<group>"; };
-		F61B5BED1756DC190020F690 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		F61B5BEE1756DC190020F690 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
-		F61B5BEF1756DC190020F690 /* close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn.png; sourceTree = "<group>"; };
-		F61B5BF01756DC190020F690 /* close_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_btn@2x.png"; sourceTree = "<group>"; };
-		F61B5BF11756DC190020F690 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
-		F61B5BF21756DC190020F690 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
-		F61B5BF31756DC190020F690 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		F61B5BF41756DC190020F690 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
-		F61B5C061756DC190020F690 /* WBAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAuthorize.h; sourceTree = "<group>"; };
-		F61B5C071756DC190020F690 /* WBAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAuthorize.m; sourceTree = "<group>"; };
-		F61B5C081756DC190020F690 /* WBAuthorizeWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAuthorizeWebView.h; sourceTree = "<group>"; };
-		F61B5C091756DC190020F690 /* WBAuthorizeWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAuthorizeWebView.m; sourceTree = "<group>"; };
-		F61B5C0A1756DC190020F690 /* WBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBEngine.h; sourceTree = "<group>"; };
-		F61B5C0B1756DC190020F690 /* WBEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBEngine.m; sourceTree = "<group>"; };
-		F61B5C0C1756DC190020F690 /* WBLogInAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLogInAlertView.h; sourceTree = "<group>"; };
-		F61B5C0D1756DC190020F690 /* WBLogInAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLogInAlertView.m; sourceTree = "<group>"; };
-		F61B5C0E1756DC190020F690 /* WBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRequest.h; sourceTree = "<group>"; };
-		F61B5C0F1756DC190020F690 /* WBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRequest.m; sourceTree = "<group>"; };
-		F61B5C101756DC190020F690 /* WBSDKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKGlobal.h; sourceTree = "<group>"; };
-		F61B5C111756DC190020F690 /* WBSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSendView.h; sourceTree = "<group>"; };
-		F61B5C121756DC190020F690 /* WBSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSendView.m; sourceTree = "<group>"; };
-		F61B5C131756DC190020F690 /* WBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUtil.h; sourceTree = "<group>"; };
-		F61B5C141756DC190020F690 /* WBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUtil.m; sourceTree = "<group>"; };
-		F61B5C151756DC190020F690 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		F61B5C161756DC190020F690 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F61B5C581756DFF90020F690 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F61B5C591756DFF90020F690 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F61B5C8A1756F4A40020F690 /* libChineseSNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChineseSNS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6742A6F175706F200BC3D32 /* closeweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeweibo.png; sourceTree = "<group>"; };
-		F6742A70175706F200BC3D32 /* closeweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeweibo@2x.png"; sourceTree = "<group>"; };
 		F6742A931757348700BC3D32 /* SHKTencentWeixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKTencentWeixin.h; sourceTree = "<group>"; };
 		F6742A941757348700BC3D32 /* SHKTencentWeixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKTencentWeixin.m; sourceTree = "<group>"; };
 		F6742A991757354900BC3D32 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
@@ -1815,6 +1755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D7869F175740B200B7BB6C /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
+				7AC9550717AAB47200A200AD /* libWeiboSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1892,6 +1833,7 @@
 			children = (
 				F61B5C581756DFF90020F690 /* MBProgressHUD.h */,
 				F61B5C591756DFF90020F690 /* MBProgressHUD.m */,
+				7AC9550217AAB47200A200AD /* libWeiboSDK */,
 				F61B5BDE1756DC190020F690 /* SinaWeiBoSDK */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -2601,12 +2543,20 @@
 		7AC2A38B16597C680089ABE8 /* Sina Weibo */ = {
 			isa = PBXGroup;
 			children = (
-				F6742A6F175706F200BC3D32 /* closeweibo.png */,
-				F6742A70175706F200BC3D32 /* closeweibo@2x.png */,
 				7AC2A38C16597CCC0089ABE8 /* SHKSinaWeibo.h */,
 				7AC2A38D16597CCC0089ABE8 /* SHKSinaWeibo.m */,
 			);
 			path = "Sina Weibo";
+			sourceTree = "<group>";
+		};
+		7AC9550217AAB47200A200AD /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9550317AAB47200A200AD /* libWeiboSDK.a */,
+				7AC9550417AAB47200A200AD /* WeiboSDK.bundle */,
+				7AC9550517AAB47200A200AD /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
 			sourceTree = "<group>";
 		};
 		7AECF2E5171D4679000722FA /* Products */ = {
@@ -2997,24 +2947,7 @@
 			isa = PBXGroup;
 			children = (
 				F61B5BDF1756DC190020F690 /* CTMBase64 */,
-				F61B5BE31756DC190020F690 /* Localizable.strings */,
-				F61B5BE51756DC190020F690 /* Resource */,
 				F61B5BF51756DC190020F690 /* SBJSON */,
-				F61B5C061756DC190020F690 /* WBAuthorize.h */,
-				F61B5C071756DC190020F690 /* WBAuthorize.m */,
-				F61B5C081756DC190020F690 /* WBAuthorizeWebView.h */,
-				F61B5C091756DC190020F690 /* WBAuthorizeWebView.m */,
-				F61B5C0A1756DC190020F690 /* WBEngine.h */,
-				F61B5C0B1756DC190020F690 /* WBEngine.m */,
-				F61B5C0C1756DC190020F690 /* WBLogInAlertView.h */,
-				F61B5C0D1756DC190020F690 /* WBLogInAlertView.m */,
-				F61B5C0E1756DC190020F690 /* WBRequest.h */,
-				F61B5C0F1756DC190020F690 /* WBRequest.m */,
-				F61B5C101756DC190020F690 /* WBSDKGlobal.h */,
-				F61B5C111756DC190020F690 /* WBSendView.h */,
-				F61B5C121756DC190020F690 /* WBSendView.m */,
-				F61B5C131756DC190020F690 /* WBUtil.h */,
-				F61B5C141756DC190020F690 /* WBUtil.m */,
 			);
 			path = SinaWeiBoSDK;
 			sourceTree = "<group>";
@@ -3027,35 +2960,6 @@
 				F61B5BE21756DC190020F690 /* GTMDefines.h */,
 			);
 			path = CTMBase64;
-			sourceTree = "<group>";
-		};
-		F61B5BE51756DC190020F690 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F61B5BE61756DC190020F690 /* Images */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		F61B5BE61756DC190020F690 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F61B5BE71756DC190020F690 /* bg.png */,
-				F61B5BE81756DC190020F690 /* bg@2x.png */,
-				F61B5BE91756DC190020F690 /* bg_land.png */,
-				F61B5BEA1756DC190020F690 /* bg_land@2x.png */,
-				F61B5BEB1756DC190020F690 /* btn.png */,
-				F61B5BEC1756DC190020F690 /* btn@2x.png */,
-				F61B5BED1756DC190020F690 /* close.png */,
-				F61B5BEE1756DC190020F690 /* close@2x.png */,
-				F61B5BEF1756DC190020F690 /* close_btn.png */,
-				F61B5BF01756DC190020F690 /* close_btn@2x.png */,
-				F61B5BF11756DC190020F690 /* delete.png */,
-				F61B5BF21756DC190020F690 /* delete@2x.png */,
-				F61B5BF31756DC190020F690 /* logo.png */,
-				F61B5BF41756DC190020F690 /* logo@2x.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		F61B5BF51756DC190020F690 /* SBJSON */ = {
@@ -3451,14 +3355,6 @@
 				7AE8DC7C165B549B004D99D2 /* DummyLibFile.h in Headers */,
 				F61B5C171756DC190020F690 /* GTMBase64.h in Headers */,
 				F61B5C1A1756DC190020F690 /* GTMDefines.h in Headers */,
-				F61B5C401756DC190020F690 /* WBAuthorize.h in Headers */,
-				F61B5C431756DC190020F690 /* WBAuthorizeWebView.h in Headers */,
-				F61B5C461756DC190020F690 /* WBEngine.h in Headers */,
-				F61B5C491756DC190020F690 /* WBLogInAlertView.h in Headers */,
-				F61B5C4C1756DC190020F690 /* WBRequest.h in Headers */,
-				F61B5C4F1756DC190020F690 /* WBSDKGlobal.h in Headers */,
-				F61B5C501756DC190020F690 /* WBSendView.h in Headers */,
-				F61B5C531756DC190020F690 /* WBUtil.h in Headers */,
 				F61B5C5A1756DFF90020F690 /* MBProgressHUD.h in Headers */,
 				F6742A951757348700BC3D32 /* SHKTencentWeixin.h in Headers */,
 				F6742A9E1757354900BC3D32 /* WXApi.h in Headers */,
@@ -3692,6 +3588,7 @@
 				51A09555179567F5008C6666 /* SBJsonTokeniser.h in Headers */,
 				51A09557179567F5008C6666 /* SBJsonUTF8Stream.h in Headers */,
 				51A09559179567F5008C6666 /* SBJsonWriter.h in Headers */,
+				7AC9550917AAB47300A200AD /* WeiboSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4601,8 +4498,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6742A71175706FA00BC3D32 /* closeweibo.png in Resources */,
-				F6742A72175706FD00BC3D32 /* closeweibo@2x.png in Resources */,
 				F61B5CA91756F55D0020F690 /* bottom-bar.png in Resources */,
 				F61B5CAA1756F55D0020F690 /* bottom-bar@2x.png in Resources */,
 				F61B5CAB1756F55D0020F690 /* head-frame.png in Resources */,
@@ -4617,21 +4512,7 @@
 				F61B5CB41756F55D0020F690 /* small-button-normal@2x.png in Resources */,
 				7A2882491553CC61007DC379 /* ShareKit.bundle in Resources */,
 				7A2882571553D7E1007DC379 /* SHKSharers.plist in Resources */,
-				F61B5C1B1756DC190020F690 /* Localizable.strings in Resources */,
-				F61B5C1C1756DC190020F690 /* bg.png in Resources */,
-				F61B5C1D1756DC190020F690 /* bg@2x.png in Resources */,
-				F61B5C1E1756DC190020F690 /* bg_land.png in Resources */,
-				F61B5C1F1756DC190020F690 /* bg_land@2x.png in Resources */,
-				F61B5C201756DC190020F690 /* btn.png in Resources */,
-				F61B5C211756DC190020F690 /* btn@2x.png in Resources */,
-				F61B5C221756DC190020F690 /* close.png in Resources */,
-				F61B5C231756DC190020F690 /* close@2x.png in Resources */,
-				F61B5C241756DC190020F690 /* close_btn.png in Resources */,
-				F61B5C251756DC190020F690 /* close_btn@2x.png in Resources */,
-				F61B5C261756DC190020F690 /* delete.png in Resources */,
-				F61B5C271756DC190020F690 /* delete@2x.png in Resources */,
-				F61B5C281756DC190020F690 /* logo.png in Resources */,
-				F61B5C291756DC190020F690 /* logo@2x.png in Resources */,
+				7AC9550817AAB47300A200AD /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4848,13 +4729,6 @@
 			files = (
 				7AE8DC7D165B549B004D99D2 /* DummyLibFile.m in Sources */,
 				F61B5C181756DC190020F690 /* GTMBase64.m in Sources */,
-				F61B5C411756DC190020F690 /* WBAuthorize.m in Sources */,
-				F61B5C441756DC190020F690 /* WBAuthorizeWebView.m in Sources */,
-				F61B5C471756DC190020F690 /* WBEngine.m in Sources */,
-				F61B5C4A1756DC190020F690 /* WBLogInAlertView.m in Sources */,
-				F61B5C4D1756DC190020F690 /* WBRequest.m in Sources */,
-				F61B5C511756DC190020F690 /* WBSendView.m in Sources */,
-				F61B5C541756DC190020F690 /* WBUtil.m in Sources */,
 				F61B5C5B1756DFF90020F690 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5372,19 +5246,6 @@
 			targetProxy = F61B5CB51756F5680020F690 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F61B5BE31756DC190020F690 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F61B5BE41756DC190020F690 /* en */,
-				F61B5C151756DC190020F690 /* zh-Hans */,
-				F61B5C161756DC190020F690 /* zh-Hant */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4503EBBE169104470057294C /* Debug */ = {
@@ -6205,6 +6066,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "ShareKitLibraryResources/ShareKitLibraryResources-Info.plist";
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWeiboSDK\"",
+				);
 				PRODUCT_NAME = ShareKit;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -6226,6 +6091,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "ShareKitLibraryResources/ShareKitLibraryResources-Info.plist";
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWeiboSDK\"",
+				);
 				PRODUCT_NAME = ShareKit;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -7441,6 +7310,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
+					"\"$(SRCROOT)/libWeiboSDK\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -7465,6 +7335,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
+					"\"$(SRCROOT)/libWeiboSDK\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
