@@ -62,6 +62,10 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return ([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]);
 }
 
++ (BOOL)canShareFile:(SHKFile *)file{
+	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
+}
+
 -(BOOL)quiet{
     return YES;
 }
@@ -175,6 +179,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
             break;
             
         case SHKShareTypeImage:
+        case SHKShareTypeFile:
             [self sendImage];
             break;
 		default:
@@ -214,7 +219,12 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     WXMediaMessage *message=[WXMediaMessage message];
     [message setThumbImage:thumb];
     WXImageObject *ext=[WXImageObject object];
-    [ext setImageData:UIImagePNGRepresentation([self.item image])];
+	if (self.item.file && [self.item.file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+		[ext setImageData:self.item.file.data];
+	}else if(self.item.image){
+		[ext setImageData:UIImagePNGRepresentation([self.item image])];
+	}
+    
     message.mediaObject=ext;
     
     SendMessageToWXReq* req=[[[SendMessageToWXReq alloc] init] autorelease];

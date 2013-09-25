@@ -70,6 +70,10 @@
 	return YES;
 }
 
++ (BOOL)canShareFile:(SHKFile *)file{
+	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
+}
+
 #pragma mark -
 #pragma mark Configuration : Dynamic Enable
 
@@ -113,6 +117,21 @@
     if (self.item.text){
         message.text = self.item.text;
     }
+	if (self.item.file) {
+		if ([self.item.file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+			// gif
+			
+			WBImageObject *image = [WBImageObject object];
+			image.imageData = self.item.file.data;
+			
+			message.imageObject = image;
+			if (!message.text) {
+				message.text = self.item.title;
+			}
+		}else{
+			NSAssert(false, @"file not supported");
+		}
+	}
     if (self.item.image) {
         WBImageObject *image = [WBImageObject object];
         image.imageData = UIImagePNGRepresentation(self.item.image);
