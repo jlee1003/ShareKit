@@ -286,3 +286,14 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 }
 
 @end
+@implementation SHKTencentWeixinFav
+
++ (NSString *)sharerTitle
+{
+	return @"添加到微信收藏";
+}
+- (int)myScene{
+	return WXSceneFavorite;
+}
+
+@end

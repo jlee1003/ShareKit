@@ -26,3 +26,5 @@
 @end
 @interface SHKTencentWeixinFriends : SHKTencentWeixin
 @end
+@interface SHKTencentWeixinFav : SHKTencentWeixin
+@end
