@@ -70,9 +70,9 @@
 	return YES;
 }
 
-+ (BOOL)canShareFile:(SHKFile *)file{
-	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
-}
+//+ (BOOL)canShareFile:(SHKFile *)file{
+//	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
+//}
 
 #pragma mark -
 #pragma mark Configuration : Dynamic Enable

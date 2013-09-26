@@ -166,10 +166,9 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	return result;
 }
 
-- (BOOL)send
-{
-	if (self.item.shareType != SHKShareTypeImage && ! [self validateItemAfterUserEdit])
-		return NO;
+- (void)share{
+	if (self.item.shareType != SHKShareTypeImage && self.item.shareType != SHKShareTypeFile && ! [self validateItemAfterUserEdit])
+		return ;
     
     switch (self.item.shareType) {
             
@@ -189,7 +188,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	// Notify delegate
 	[self sendDidStart];
     
-	return YES;
+	return ;
 }
 
 - (void)sendStatus
@@ -198,6 +197,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     [req setBText:YES];
     [req setText:[self.item customValueForKey:@"status"]];
     
+    req.scene=[self myScene];
     [WXApi sendReq:req];
 }
 
@@ -230,9 +230,13 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     SendMessageToWXReq* req=[[[SendMessageToWXReq alloc] init] autorelease];
     req.bText=NO;
     req.message=message;
-    req.scene=WXSceneSession;
+    req.scene=[self myScene];
     
     [WXApi sendReq:req];
+}
+
+- (int)myScene{
+	return WXSceneSession;
 }
 
 #pragma mark - Image process
@@ -268,4 +272,15 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
             break;
     }
 }
+@end
+@implementation SHKTencentWeixinFriends
+
++ (NSString *)sharerTitle
+{
+	return @"发送到微信朋友圈";
+}
+- (int)myScene{
+	return WXSceneTimeline;
+}
+
 @end
