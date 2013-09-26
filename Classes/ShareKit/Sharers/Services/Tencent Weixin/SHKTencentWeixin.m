@@ -218,14 +218,16 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     
     WXMediaMessage *message=[WXMediaMessage message];
     [message setThumbImage:thumb];
-    WXImageObject *ext=[WXImageObject object];
 	if (self.item.file && [self.item.file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound) {
-		[ext setImageData:self.item.file.data];
+		WXEmoticonObject *ext=[WXEmoticonObject object];
+		[ext setEmoticonData:self.item.file.data];
+		message.mediaObject=ext;
 	}else if(self.item.image){
+		WXImageObject *ext=[WXImageObject object];
 		[ext setImageData:UIImagePNGRepresentation([self.item image])];
+		message.mediaObject=ext;
 	}
     
-    message.mediaObject=ext;
     
     SendMessageToWXReq* req=[[[SendMessageToWXReq alloc] init] autorelease];
     req.bText=NO;
