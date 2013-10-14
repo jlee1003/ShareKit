@@ -53,6 +53,10 @@
 	return YES;
 }
 
++ (BOOL)canShareFile:(SHKFile *)file{
+	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
+}
+
 + (BOOL)shareRequiresInternetConnection
 {
 	return NO;
@@ -88,7 +92,15 @@
 		[self placeImageOnPasteboard];
     else if (self.item.shareType == SHKShareTypeText)
         [[UIPasteboard generalPasteboard] setString:self.item.text];
-	
+	else if (self.item.shareType == SHKShareTypeFile){
+		if ([self.item.file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+			// gif
+			UIPasteboard *pasteBoard=[UIPasteboard generalPasteboard];
+			[pasteBoard setData:self.item.file.data forPasteboardType:@"com.compuserve.gif"];
+			
+		}
+	}
+		
 	// Notify user
 	[[SHKActivityIndicator currentIndicator] displayCompleted:SHKLocalizedString(@"Copied!")];
 	

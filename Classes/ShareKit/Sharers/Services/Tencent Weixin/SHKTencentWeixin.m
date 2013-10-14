@@ -62,6 +62,10 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return ([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]);
 }
 
++ (BOOL)canShareFile:(SHKFile *)file{
+	return [file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound;
+}
+
 -(BOOL)quiet{
     return YES;
 }
@@ -162,10 +166,9 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	return result;
 }
 
-- (BOOL)send
-{
-	if (self.item.shareType != SHKShareTypeImage && ! [self validateItemAfterUserEdit])
-		return NO;
+- (void)share{
+	if (self.item.shareType != SHKShareTypeImage && self.item.shareType != SHKShareTypeFile && ! [self validateItemAfterUserEdit])
+		return ;
     
     switch (self.item.shareType) {
             
@@ -175,6 +178,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
             break;
             
         case SHKShareTypeImage:
+        case SHKShareTypeFile:
             [self sendImage];
             break;
 		default:
@@ -184,7 +188,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	// Notify delegate
 	[self sendDidStart];
     
-	return YES;
+	return ;
 }
 
 - (void)sendStatus
@@ -193,6 +197,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     [req setBText:YES];
     [req setText:[self.item customValueForKey:@"status"]];
     
+    req.scene=[self myScene];
     [WXApi sendReq:req];
 }
 
@@ -213,16 +218,27 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     
     WXMediaMessage *message=[WXMediaMessage message];
     [message setThumbImage:thumb];
-    WXImageObject *ext=[WXImageObject object];
-    [ext setImageData:UIImagePNGRepresentation([self.item image])];
-    message.mediaObject=ext;
+	if (self.item.file && [self.item.file.filename rangeOfString:@".gif" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+		WXEmoticonObject *ext=[WXEmoticonObject object];
+		[ext setEmoticonData:self.item.file.data];
+		message.mediaObject=ext;
+	}else if(self.item.image){
+		WXImageObject *ext=[WXImageObject object];
+		[ext setImageData:UIImagePNGRepresentation([self.item image])];
+		message.mediaObject=ext;
+	}
+    
     
     SendMessageToWXReq* req=[[[SendMessageToWXReq alloc] init] autorelease];
     req.bText=NO;
     req.message=message;
-    req.scene=WXSceneSession;
+    req.scene=[self myScene];
     
     [WXApi sendReq:req];
+}
+
+- (int)myScene{
+	return WXSceneSession;
 }
 
 #pragma mark - Image process
@@ -258,4 +274,26 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
             break;
     }
 }
+@end
+@implementation SHKTencentWeixinFriends
+
++ (NSString *)sharerTitle
+{
+	return @"发送到微信朋友圈";
+}
+- (int)myScene{
+	return WXSceneTimeline;
+}
+
+@end
+@implementation SHKTencentWeixinFav
+
++ (NSString *)sharerTitle
+{
+	return @"添加到微信收藏";
+}
+- (int)myScene{
+	return WXSceneFavorite;
+}
+
 @end

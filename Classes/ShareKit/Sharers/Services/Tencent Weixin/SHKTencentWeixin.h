@@ -22,5 +22,9 @@
 
 - (void)sendStatus;
 - (void)sendImage;
-
+- (int)myScene;
+@end
+@interface SHKTencentWeixinFriends : SHKTencentWeixin
+@end
+@interface SHKTencentWeixinFav : SHKTencentWeixin
 @end
