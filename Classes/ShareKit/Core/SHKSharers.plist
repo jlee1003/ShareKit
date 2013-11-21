@@ -42,6 +42,8 @@
 		<string>SHKNetEaseWeibo</string>
 		<string>SHKTencentWeibo</string>
 		<string>SHKTencentWeixin</string>
+		<string>SHKTencentWeixinFav</string>
+		<string>SHKTencentWeixinFriends</string>
 	</array>
 </dict>
 </plist>
