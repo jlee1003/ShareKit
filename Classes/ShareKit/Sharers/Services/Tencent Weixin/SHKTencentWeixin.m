@@ -25,9 +25,9 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return weixin;
 }
 
+#ifdef __aarch64__
 
-#pragma mark - Handle Wx SDK Methods
-
+#else
 + (void)registerApp
 {
     [WXApi registerApp:SHKCONFIG(tencentWeixinAppId)];
@@ -39,8 +39,6 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 }
 
 
-#pragma mark -
-#pragma mark Configuration : Service Defination
 
 + (NSString *)sharerTitle
 {
@@ -70,16 +68,11 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return YES;
 }
 
-#pragma mark -
-#pragma mark Configuration : Dynamic Enable
 
 - (BOOL)shouldAutoShare
 {
 	return NO;
 }
-
-#pragma mark -
-#pragma mark Authorization
 
 + (void)logout
 {
@@ -92,8 +85,6 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
     return YES;
 }
 
-#pragma mark -
-#pragma mark UI Implementation
 
 - (void)show
 {
@@ -138,9 +129,6 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	[self tryToSend];
 }
 
-
-#pragma mark -
-#pragma mark Share API Methods
 
 - (BOOL)validateItem
 {
@@ -241,7 +229,6 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 	return WXSceneSession;
 }
 
-#pragma mark - Image process
 
 - (NSData *)resizeWithImage:(UIImage*)image scale:(CGFloat)scale compression:(CGFloat)compression
 {
@@ -256,7 +243,6 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 }
 
 
-#pragma mark - Weixin delegate methods
 
 
 - (void)onResp:(BaseResp *)resp
@@ -274,6 +260,7 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
             break;
     }
 }
+#endif
 @end
 @implementation SHKTencentWeixinFriends
 
@@ -281,10 +268,13 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 {
 	return @"发送到微信朋友圈";
 }
+#ifdef __aarch64__
+
+#else
 - (int)myScene{
 	return WXSceneTimeline;
 }
-
+#endif
 @end
 @implementation SHKTencentWeixinFav
 
@@ -292,8 +282,11 @@ static NSString *const kSHKTencentWeixinUserInfo = @"kSHKTencentWeixinUserInfo";
 {
 	return @"添加到微信收藏";
 }
+#ifdef __aarch64__
+
+#else
 - (int)myScene{
 	return WXSceneFavorite;
 }
-
+#endif
 @end

@@ -116,6 +116,9 @@
 		7A3082B416DA0721005AF769 /* SHKTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3082B216D9E255005AF769 /* SHKTumblr.m */; };
 		7A3A0D83170CBDD300A0B717 /* SHKFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A3A0D81170CBDD300A0B717 /* SHKFile.h */; };
 		7A3A0D84170CBDD300A0B717 /* SHKFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A0D82170CBDD300A0B717 /* SHKFile.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7A4404C7186343F500163B93 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4404C4186343F500163B93 /* libWeChatSDK.a */; };
+		7A4404C8186343F600163B93 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4404C5186343F500163B93 /* WXApi.h */; };
+		7A4404C9186343F600163B93 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4404C6186343F500163B93 /* WXApiObject.h */; };
 		7A49DBBD16BC193E004B7E78 /* SHKReadability.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB495A31520349A00505A99 /* SHKReadability.m */; };
 		7A49DBC716BC19BD004B7E78 /* libReadability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49DBC316BC193E004B7E78 /* libReadability.a */; };
 		7A56BFC41659173D00134F04 /* SHKiOSSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56BFC01659173D00134F04 /* SHKiOSSharer.m */; };
@@ -380,10 +383,7 @@
 		F61B5CBA1756F5FB0020F690 /* RODialogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05F817564DEC00437F54 /* RODialogModel.m */; };
 		F61B5CBB1756F5FB0020F690 /* RODialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED05FA17564DEC00437F54 /* RODialogView.m */; };
 		F6742A951757348700BC3D32 /* SHKTencentWeixin.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A931757348700BC3D32 /* SHKTencentWeixin.h */; };
-		F6742A9E1757354900BC3D32 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A9A1757354900BC3D32 /* WXApi.h */; };
-		F6742A9F1757354900BC3D32 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F6742A9B1757354900BC3D32 /* WXApiObject.h */; };
 		F6D7869417573B2700B7BB6C /* SHKTencentWeixin.m in Sources */ = {isa = PBXBuildFile; fileRef = F6742A941757348700BC3D32 /* SHKTencentWeixin.m */; };
-		F6D7869F175740B200B7BB6C /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6742A991757354900BC3D32 /* libWeChatSDK_armv7_armv7s.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -988,6 +988,9 @@
 		7A3A0D8E170CC70A00A0B717 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7A3A0D90170CC94B00A0B717 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7A3C61ED147520B700C47D14 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7A4404C4186343F500163B93 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		7A4404C5186343F500163B93 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		7A4404C6186343F500163B93 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		7A46FCE4171DF2DB00CB8D64 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "Submodules/google-api-objectivec/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		7A49DBC316BC193E004B7E78 /* libReadability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReadability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4CAA161577BEF90010E6B3 /* SHKFormFieldCell_PrivateProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKFormFieldCell_PrivateProperties.h; sourceTree = "<group>"; };
@@ -1327,9 +1330,6 @@
 		F61B5C8A1756F4A40020F690 /* libChineseSNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChineseSNS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6742A931757348700BC3D32 /* SHKTencentWeixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKTencentWeixin.h; sourceTree = "<group>"; };
 		F6742A941757348700BC3D32 /* SHKTencentWeixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKTencentWeixin.m; sourceTree = "<group>"; };
-		F6742A991757354900BC3D32 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
-		F6742A9A1757354900BC3D32 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		F6742A9B1757354900BC3D32 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		F6ED05B31755E49B00437F54 /* SHKTencentWeibo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKTencentWeibo.h; sourceTree = "<group>"; };
 		F6ED05B41755E49B00437F54 /* SHKTencentWeibo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKTencentWeibo.m; sourceTree = "<group>"; };
 		F6ED05B51755E49B00437F54 /* TencentOAMutableURLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentOAMutableURLRequest.h; sourceTree = "<group>"; };
@@ -1754,8 +1754,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D7869F175740B200B7BB6C /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
 				7AC9550717AAB47200A200AD /* libWeiboSDK.a in Frameworks */,
+				7A4404C7186343F500163B93 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1833,6 +1833,7 @@
 			children = (
 				F61B5C581756DFF90020F690 /* MBProgressHUD.h */,
 				F61B5C591756DFF90020F690 /* MBProgressHUD.m */,
+				7A4404C3186343F500163B93 /* weixinSDK */,
 				7AC9550217AAB47200A200AD /* libWeiboSDK */,
 				F61B5BDE1756DC190020F690 /* SinaWeiBoSDK */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -2458,6 +2459,16 @@
 			name = ShareKitLibrary;
 			sourceTree = "<group>";
 		};
+		7A4404C3186343F500163B93 /* weixinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7A4404C4186343F500163B93 /* libWeChatSDK.a */,
+				7A4404C5186343F500163B93 /* WXApi.h */,
+				7A4404C6186343F500163B93 /* WXApiObject.h */,
+			);
+			path = weixinSDK;
+			sourceTree = "<group>";
+		};
 		7A499AFD174153EA00210E3C /* Google OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -2998,21 +3009,10 @@
 		F6742A921757344900BC3D32 /* Tencent Weixin */ = {
 			isa = PBXGroup;
 			children = (
-				F6742A971757354800BC3D32 /* weixin SDK */,
 				F6742A931757348700BC3D32 /* SHKTencentWeixin.h */,
 				F6742A941757348700BC3D32 /* SHKTencentWeixin.m */,
 			);
 			path = "Tencent Weixin";
-			sourceTree = "<group>";
-		};
-		F6742A971757354800BC3D32 /* weixin SDK */ = {
-			isa = PBXGroup;
-			children = (
-				F6742A991757354900BC3D32 /* libWeChatSDK_armv7_armv7s.a */,
-				F6742A9A1757354900BC3D32 /* WXApi.h */,
-				F6742A9B1757354900BC3D32 /* WXApiObject.h */,
-			);
-			path = "weixin SDK";
 			sourceTree = "<group>";
 		};
 		F6ED05B21755E49B00437F54 /* Tencent Weibo */ = {
@@ -3357,8 +3357,6 @@
 				F61B5C1A1756DC190020F690 /* GTMDefines.h in Headers */,
 				F61B5C5A1756DFF90020F690 /* MBProgressHUD.h in Headers */,
 				F6742A951757348700BC3D32 /* SHKTencentWeixin.h in Headers */,
-				F6742A9E1757354900BC3D32 /* WXApi.h in Headers */,
-				F6742A9F1757354900BC3D32 /* WXApiObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3580,9 +3578,11 @@
 				51A09545179567F5008C6666 /* SBJsonParser.h in Headers */,
 				51A09547179567F5008C6666 /* SBJsonStreamParser.h in Headers */,
 				51A09549179567F5008C6666 /* SBJsonStreamParserAccumulator.h in Headers */,
+				7A4404C8186343F600163B93 /* WXApi.h in Headers */,
 				51A0954B179567F5008C6666 /* SBJsonStreamParserAdapter.h in Headers */,
 				51A0954D179567F5008C6666 /* SBJsonStreamParserState.h in Headers */,
 				51A0954F179567F5008C6666 /* SBJsonStreamWriter.h in Headers */,
+				7A4404C9186343F600163B93 /* WXApiObject.h in Headers */,
 				51A09551179567F5008C6666 /* SBJsonStreamWriterAccumulator.h in Headers */,
 				51A09553179567F5008C6666 /* SBJsonStreamWriterState.h in Headers */,
 				51A09555179567F5008C6666 /* SBJsonTokeniser.h in Headers */,
@@ -6004,7 +6004,8 @@
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
+					"\\\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent\\ Weixin/weixin\\ SDK\\\"",
+					"/Users/jlee/Documents/APPS/ShareKit/Classes/ShareKit/Sharers/Services/Tencent\\ Weixin/weixin\\ SDK",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -6031,7 +6032,8 @@
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
+					"\\\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent\\ Weixin/weixin\\ SDK\\\"",
+					"/Users/jlee/Documents/APPS/ShareKit/Classes/ShareKit/Sharers/Services/Tencent\\ Weixin/weixin\\ SDK",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -7153,12 +7155,13 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -7167,12 +7170,13 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7203,7 +7207,6 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7228,7 +7231,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ShareKit_Prefix.pch;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -7260,7 +7262,6 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7285,7 +7286,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ShareKit_Prefix.pch;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -7313,8 +7313,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
-					"\"$(SRCROOT)/libWeiboSDK\"",
+					"$(SRCROOT)/weixinSDK",
+					"$(SRCROOT)/libWeiboSDK",
+					/Users/jlee/Documents/APPS/ShareKit/weixinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -7338,8 +7339,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/ShareKit/Sharers/Services/Tencent Weixin/weixin SDK\"",
-					"\"$(SRCROOT)/libWeiboSDK\"",
+					"$(SRCROOT)/weixinSDK",
+					"$(SRCROOT)/libWeiboSDK",
+					/Users/jlee/Documents/APPS/ShareKit/weixinSDK,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

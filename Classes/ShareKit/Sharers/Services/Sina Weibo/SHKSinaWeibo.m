@@ -32,6 +32,9 @@
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
 
 @implementation SHKSinaWeibo
+#ifdef __aarch64__
+#else
+
 -(void)dealloc{
     [super dealloc];
 }
@@ -157,5 +160,5 @@
     [WeiboSDK sendRequest:request];
     
 }
-
+#endif
 @end

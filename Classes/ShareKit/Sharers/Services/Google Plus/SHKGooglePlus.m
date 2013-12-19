@@ -19,7 +19,8 @@
 
 #pragma mark -
 #pragma mark Configuration : Service Defination
-
+#ifdef __aarch64__
+#else
 + (NSString *)sharerTitle
 {
 	return SHKLocalizedString(@"Google+");
@@ -119,5 +120,5 @@
         [self sendDidCancel];
     }
 }
-
+#endif
 @end
