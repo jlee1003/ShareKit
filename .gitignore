@@ -11,3 +11,9 @@ build
 Classes/ShareKit/SHKConfig.h
 DerivedData
 Submodules/*
+
+Submodules/facebook-ios-sdk
+
+Submodules/google-api-objectivec
+
+Submodules/google-api-objectivec
